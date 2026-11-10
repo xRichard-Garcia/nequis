@@ -1,0 +1,268 @@
+<% content_for :title, "Inicio - NEKIS Sublimación" %>
+<% content_for :meta_description, "Tazas, botellas, poleras y cojines personalizados con sublimación artística. Transformamos tus recuerdos en regalos únicos hechos con amor en Chile." %>
+<% content_for :head do %>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Inicio - NEKIS Sublimación">
+  <meta property="og:description" content="Transformamos tus recuerdos en regalos únicos. Sublimación artística y personalización de tazas, prendas y recuerdos.">
+  <meta property="og:image" content="<%= image_url "nekis/hero-regalo.jpg" %>">
+<% end %>
+
+<main class="w-full pt-28 bg-background min-h-screen">
+  <div class="flex flex-col w-full">
+    <div class="max-w-7xl mx-auto w-full px-6 lg:px-12 py-space-md space-y-space-xl">
+      <!-- 1. Hero -->
+      <section id="inicio" class="relative scroll-mt-32 w-full rounded-xl bg-surface-container-low overflow-hidden shadow-sm p-6 sm:p-8 lg:p-12">
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-fixed/40 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
+        <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-secondary-fixed/50 rounded-full blur-2xl pointer-events-none" aria-hidden="true"></div>
+
+        <div class="relative grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed shadow-sm">
+              <span class="material-symbols-outlined text-[18px]" aria-hidden="true">auto_awesome</span>
+              <span class="font-label-md text-label-md uppercase tracking-wider">Crea tu magia</span>
+            </div>
+
+            <div class="space-y-3">
+              <h1 class="font-display-lg text-display-lg-mobile sm:text-display-lg text-on-surface leading-tight tracking-tight">
+                Transformamos tus recuerdos en <span class="text-primary font-bold inline-block">regalos únicos</span>
+                <svg class="inline-block w-10 h-10 -mt-1 align-baseline" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                  <path d="M12 1c.8 6.3 4.2 9.7 10.5 10.5C16.2 12.3 12.8 15.7 12 22c-.8-6.3-4.2-9.7-10.5-10.5C7.8 10.7 11.2 7.3 12 1Z" fill="#f4d96e"/>
+                  <path d="M24 18c.3 2.4 1.6 3.7 4 4-2.4.3-3.7 1.6-4 4-.3-2.4-1.6-3.7-4-4 2.4-.3 3.7-1.6 4-4Z" fill="#f4d96e"/>
+                </svg>
+              </h1>
+              <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                Estampados con amor, colores vibrantes y detalles hechos a tu medida. Diseños pensados para abrazar el corazón de quienes más quieres.
+              </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+              <a class="inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-4 bg-secondary-fixed hover:bg-secondary-fixed-dim text-on-secondary-fixed font-headline-sm text-label-lg sm:text-headline-sm rounded-full shadow-md hover:-translate-y-0.5 transition-all" href="#personaliza">
+                <span class="material-symbols-outlined text-[24px]" aria-hidden="true">magic_button</span>
+                <span>Personaliza tu producto</span>
+              </a>
+              <a class="inline-flex items-center justify-center gap-2 px-6 py-4 bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-lg text-label-lg rounded-full shadow-sm transition-all" href="#catalogo">
+                <span class="material-symbols-outlined text-[20px]" aria-hidden="true">explore</span>
+                <span>Ver catálogo</span>
+              </a>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-3 pt-2">
+              <div class="flex -space-x-2" aria-hidden="true">
+                <span class="inline-block w-8 h-8 rounded-full bg-primary-fixed-dim text-on-primary-fixed text-center leading-8 font-label-sm shadow-sm font-bold">L</span>
+                <span class="inline-block w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed text-center leading-8 font-label-sm shadow-sm font-bold">M</span>
+                <span class="inline-block w-8 h-8 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-center leading-8 font-label-sm shadow-sm font-bold">C</span>
+              </div>
+              <div class="flex flex-wrap items-center gap-1 text-on-surface-variant font-body-sm text-body-sm min-w-0">
+                <span class="text-secondary font-bold flex" aria-label="5 de 5 estrellas">
+                  <% 5.times do %>
+                    <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1" aria-hidden="true">star</span>
+                  <% end %>
+                </span>
+                <span class="font-bold text-on-surface ml-1">+1.200</span>
+                sonrisas entregadas en todo Chile
+              </div>
+            </div>
+
+            <div class="pt-4 space-y-2">
+              <p class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Explora por categoría:</p>
+              <div class="flex flex-wrap gap-2">
+                <a href="#catalogo" class="inline-flex items-center gap-2 px-4 py-2 bg-surface-container-lowest hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed rounded-full shadow-sm transition-all font-label-md text-label-md">
+                  <span class="material-symbols-outlined text-primary text-[18px]" aria-hidden="true">coffee</span>
+                  <span>Tazas</span>
+                </a>
+                <a href="#catalogo" class="inline-flex items-center gap-2 px-4 py-2 bg-surface-container-lowest hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed rounded-full shadow-sm transition-all font-label-md text-label-md">
+                  <span class="material-symbols-outlined text-primary text-[18px]" aria-hidden="true">apparel</span>
+                  <span>Poleras</span>
+                </a>
+                <a href="#catalogo" class="inline-flex items-center gap-2 px-4 py-2 bg-surface-container-lowest hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed rounded-full shadow-sm transition-all font-label-md text-label-md">
+                  <span class="material-symbols-outlined text-primary text-[18px]" aria-hidden="true">water_bottle</span>
+                  <span>Botellas</span>
+                </a>
+                <a href="#catalogo" class="inline-flex items-center gap-2 px-4 py-2 bg-surface-container-lowest hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed rounded-full shadow-sm transition-all font-label-md text-label-md">
+                  <span class="material-symbols-outlined text-primary text-[18px]" aria-hidden="true">bed</span>
+                  <span>Cojines</span>
+                </a>
+                <a href="#catalogo" class="inline-flex items-center gap-2 px-4 py-2 bg-surface-container-lowest hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed rounded-full shadow-sm transition-all font-label-md text-label-md">
+                  <span class="material-symbols-outlined text-primary text-[18px]" aria-hidden="true">card_giftcard</span>
+                  <span>Accesorios</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 relative flex justify-center">
+            <div class="relative w-full max-w-md aspect-[4/5] rounded-xl overflow-hidden shadow-lg bg-surface-container-highest">
+              <%= image_tag "nekis/hero-regalo.jpg",
+                    alt: "Mujer sonriendo mientras sostiene una taza blanca personalizada con una foto familiar",
+                    class: "w-full h-full object-cover rounded-xl",
+                    loading: "eager",
+                    fetchpriority: "high",
+                    decoding: "async" %>
+
+              <div class="absolute top-4 left-4 bg-surface-container-lowest/95 backdrop-blur-md px-4 py-2 rounded-full shadow-md flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">verified</span>
+                <span class="font-label-md text-label-md text-on-surface font-bold">100% Sublimado</span>
+              </div>
+
+              <div class="absolute bottom-6 right-6 bg-primary text-on-primary px-5 py-3 rounded-full shadow-lg flex items-center gap-2 animate-bounce-slow">
+                <span class="material-symbols-outlined text-secondary-fixed text-[20px]" aria-hidden="true">favorite</span>
+                <span class="font-headline-sm text-headline-sm">Hecho con amor</span>
+              </div>
+
+              <div class="absolute bottom-6 left-6 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-full shadow-sm flex items-center gap-1.5 text-on-surface-variant">
+                <span class="material-symbols-outlined text-primary text-[16px]" aria-hidden="true">local_fire_department</span>
+                <span class="font-label-sm text-label-sm">Apto lavavajillas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. La Experiencia NEKIS -->
+      <section id="experiencia" class="space-y-4 scroll-mt-32">
+        <div class="text-center space-y-1">
+          <span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Confianza y dedicación</span>
+          <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">La Experiencia NEKIS</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <%= render "home/benefit",
+                icon: "redeem",
+                icon_classes: "bg-tertiary-fixed text-tertiary",
+                title: "Packaging de Regalo",
+                description: "Listo para sorprender y encantar. Incluye caja kraft decorada, viruta protectora y dedicatoria personalizada." %>
+          <%= render "home/benefit",
+                icon: "local_shipping",
+                icon_classes: "bg-secondary-fixed text-on-secondary-fixed",
+                title: "Envíos Cuidados",
+                description: "Protección total y empaque especial anti-golpes a todo Chile. Seguimiento en tiempo real hasta tu puerta." %>
+          <%= render "home/benefit",
+                icon: "chat",
+                icon_classes: "bg-primary-fixed text-primary",
+                title: "Atención 1 a 1 directa",
+                description: "Revisamos y adaptamos tu foto o boceto antes de estampar para garantizar que el resultado final sea impecable." %>
+        </div>
+      </section>
+
+      <!-- 3. Favoritos de la comunidad -->
+      <section id="catalogo" class="space-y-6 scroll-mt-32">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+          <div class="space-y-1">
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+              <span class="material-symbols-outlined text-[16px]" aria-hidden="true">trending_up</span>
+              <span>LOS MÁS PEDIDOS</span>
+            </div>
+            <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Favoritos de la comunidad</h2>
+          </div>
+          <a class="font-label-lg text-label-lg text-primary hover:text-primary-container inline-flex items-center gap-1 transition-all" href="#catalogo">
+            <span>Ver todo el catálogo</span>
+            <span class="material-symbols-outlined text-[20px]" aria-hidden="true">arrow_forward</span>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <%= render "home/product_card",
+                image: "nekis/taza-magica.jpg",
+                alt: "Taza mágica neón personalizada con ilustración degradada y frase inspiradora",
+                badge: "Top Ventas",
+                badge_classes: "bg-secondary-fixed text-on-secondary-fixed",
+                category: "Sublimación Premium",
+                title: "Taza Mágica Neón",
+                description: "Cerámica 11oz con cambio de color al contacto térmico.",
+                price: "$9.990" %>
+          <%= render "home/product_card",
+                image: "nekis/botella-sport.jpg",
+                alt: "Botella deportiva térmica personalizada con nombre y acabado mate",
+                badge: "Favorito",
+                badge_classes: "bg-tertiary-fixed text-on-tertiary-fixed",
+                category: "Aluminio Térmico 750ml",
+                title: "Botella Sport Térmica",
+                description: "Mantiene frío 24h con mosquetón y tapa antiderrames.",
+                price: "$12.990" %>
+          <%= render "home/product_card",
+                image: "nekis/polera-soft-touch.jpg",
+                alt: "Polera blanca doblada con estampado sublimado a todo color",
+                badge: "Nuevo",
+                badge_classes: "bg-secondary-fixed text-on-secondary-fixed",
+                category: "Tacto Algodón Suave",
+                title: "Polera Soft Touch",
+                description: "Estampado imperceptible al tacto con colores eternos.",
+                price: "$14.990" %>
+          <%= render "home/product_card",
+                image: "nekis/cojin-foto.jpg",
+                alt: "Cojín decorativo personalizado con foto familiar impresa",
+                badge: "Tendencia",
+                badge_classes: "bg-tertiary-fixed text-on-tertiary-fixed",
+                category: "Deco Hogar Terciopelo",
+                title: "Cojín Foto Abrazo",
+                description: "Funda lavable con cierre invisible y relleno acolchado.",
+                price: "$11.990" %>
+        </div>
+      </section>
+
+      <!-- 4. Talleres & Proyectos Especiales -->
+      <section id="personaliza" class="relative scroll-mt-32 w-full rounded-xl bg-linear-to-r from-primary via-primary-container to-tertiary text-on-primary p-6 sm:p-8 lg:p-12 overflow-hidden shadow-md">
+        <div class="absolute -right-16 -bottom-16 w-72 h-72 rounded-full bg-secondary-fixed/20 blur-2xl pointer-events-none" aria-hidden="true"></div>
+        <div class="absolute top-0 right-1/4 w-40 h-40 rounded-full bg-tertiary-fixed/20 blur-xl pointer-events-none" aria-hidden="true"></div>
+
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-8 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-lowest/20 backdrop-blur-md text-on-primary text-label-sm font-label-sm">
+              <span class="material-symbols-outlined text-[16px]" aria-hidden="true">palette</span>
+              <span>Talleres &amp; Proyectos Especiales</span>
+            </div>
+            <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary leading-tight">¡Tú lo imaginas, nosotros lo estampamos!</h2>
+            <p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl">
+              ¿Tienes una foto especial, meme favorito, logo de tu emprendimiento o el dibujo de tus peques? Te ayudamos a crear un recuerdo inolvidable en 3 pasos simples: sube tu idea, aprueba la maqueta digital y recíbelo en tu hogar.
+            </p>
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+              <a class="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 bg-surface-container-lowest text-primary hover:bg-surface-container-low font-headline-sm text-headline-sm rounded-full shadow-md transition-all" href="#catalogo">
+                <span class="material-symbols-outlined text-[20px]" aria-hidden="true">edit</span>
+                <span>Empezar diseño</span>
+              </a>
+              <a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary-fixed-dim font-headline-sm text-headline-sm rounded-full shadow-md transition-all" href="https://wa.me/+50577040918" rel="noopener noreferrer" target="_blank">
+                <span class="material-symbols-outlined text-[20px]" aria-hidden="true">forum</span>
+                <span>Pedir asesoría por WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-4 bg-surface-container-lowest/15 backdrop-blur-md rounded-lg p-6 space-y-4">
+            <p class="font-label-md text-label-md text-secondary-fixed font-bold tracking-wider uppercase">Paso a paso express:</p>
+            <div class="space-y-3 font-body-sm text-body-sm">
+              <div class="flex items-center gap-3">
+                <span class="w-7 h-7 shrink-0 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold">1</span>
+                <span>Elige tu producto base favorito</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="w-7 h-7 shrink-0 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold">2</span>
+                <span>Envíanos tus fotos o texto para el montaje</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="w-7 h-7 shrink-0 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold">3</span>
+                <span>¡Fabricamos con amor y enviamos a tu puerta!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Comunidad NEKIS -->
+      <section id="momentos" class="space-y-4 pt-2 scroll-mt-32">
+        <div class="text-center space-y-1">
+          <span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Comunidad NEKIS</span>
+          <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Momentos que cobran vida</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">
+            Cada entrega es una emoción compartida. Revisa algunos de los últimos encargos entregados a nuestros clientes.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-2">
+          <%= render "home/community_photo", image: "nekis/comunidad-regalo.jpg", alt: "Clienta abriendo un regalo personalizado con confeti", caption: "Regalo para Mamá • Santiago" %>
+          <%= render "home/community_photo", image: "nekis/comunidad-poleras.jpg", alt: "Pareja con poleras personalizadas a juego", caption: "Poleras Aniversario • Viña del Mar" %>
+          <%= render "home/community_photo", image: "nekis/comunidad-tumblers.jpg", alt: "Tumblers personalizados para un equipo de empresa", caption: "Pack Empresa • Concepción" %>
+          <%= render "home/community_photo", image: "nekis/comunidad-cojin.jpg", alt: "Cojín personalizado con un dibujo infantil", caption: "Cojín Dibujo Infantil • La Serena" %>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>

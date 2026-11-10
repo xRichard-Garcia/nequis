@@ -1,0 +1,36 @@
+<div class="group bg-surface-container-lowest rounded-xl p-4 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+  <div class="space-y-3">
+    <div class="relative w-full aspect-square rounded-lg bg-surface-container-low overflow-hidden">
+      <%= image_tag image,
+            alt: alt,
+            class: "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300",
+            loading: "lazy",
+            decoding: "async" %>
+      <span class="absolute top-3 left-3 <%= badge_classes %> font-label-sm text-label-sm px-2.5 py-1 rounded-full shadow-sm"><%= badge %></span>
+      <button
+        type="button"
+        class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 text-primary hover:text-error flex items-center justify-center transition-colors"
+        data-action="shop#toggleFavorite"
+        aria-label="Añadir <%= title %> a favoritos"
+        aria-pressed="false"
+      >
+        <span class="material-symbols-outlined text-[18px]" aria-hidden="true">favorite</span>
+      </button>
+    </div>
+    <div class="space-y-1">
+      <span class="font-label-sm text-label-sm text-primary font-bold"><%= category %></span>
+      <h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors"><%= title %></h3>
+      <p class="font-body-sm text-body-sm text-on-surface-variant"><%= description %></p>
+    </div>
+  </div>
+  <div class="pt-4 flex items-center justify-between gap-2 mt-2">
+    <div>
+      <span class="font-body-sm text-body-sm text-outline block">Precio</span>
+      <span class="font-headline-md text-headline-md text-on-surface font-bold"><%= price %></span>
+    </div>
+    <button type="button" class="px-4 py-2.5 bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md rounded-full shadow-sm flex items-center gap-1.5 transition-all" data-action="shop#addToCart">
+      <span class="material-symbols-outlined text-[18px]" aria-hidden="true">shopping_bag</span>
+      <span>Añadir</span>
+    </button>
+  </div>
+</div>

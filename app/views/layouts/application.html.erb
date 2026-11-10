@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title><%= content_for(:title) || "NEKIS Sublimación" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#fff8f2">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="NEKIS">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="description" content="<%= content_for?(:meta_description) ? content_for(:meta_description) : "Sublimación artística y regalos personalizados: tazas, botellas, poleras, cojines y detalles hechos con amor en Chile." %>">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&amp;family=Quicksand:wght@300..700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet">
+
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon.png">
+
+    <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+
+    <%= yield :head %>
+  </head>
+
+  <body class="bg-background text-on-surface font-body-md antialiased" data-controller="shop">
+    <a href="#inicio" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:rounded-full focus:bg-primary focus:px-5 focus:py-3 focus:text-on-primary">Saltar al contenido</a>
+    <p class="sr-only" role="status" aria-live="polite" data-shop-target="status"></p>
+
+    <%= render "shared/header" %>
+
+    <%= yield %>
+
+    <%= render "shared/footer" %>
+    <%= render "shared/whatsapp_button" %>
+  </body>
+</html>

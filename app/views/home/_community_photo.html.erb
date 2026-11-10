@@ -1,0 +1,10 @@
+<div class="relative group rounded-lg overflow-hidden aspect-square bg-surface-container">
+  <%= image_tag image,
+        alt: alt,
+        class: "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300",
+        loading: "lazy",
+        decoding: "async" %>
+  <div class="absolute inset-0 bg-linear-to-t from-inverse-surface/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex items-end">
+    <p class="text-inverse-on-surface font-label-sm text-label-sm"><%= caption %></p>
+  </div>
+</div>
