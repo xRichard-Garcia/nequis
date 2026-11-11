@@ -1,7 +1,7 @@
-# NEKIS Sublimación
+# NEQUIS Sublimación
 
-Landing page de **NEKIS Sublimación**, recreada en Rails a partir del diseño
-"Inicio - NEKIS Sublimación (Escritorio)" de Stitch. Usa Rails 8, Tailwind CSS v4
+Landing page de **NEQUIS Sublimación**, recreada en Rails a partir del diseño
+"Inicio - NEQUIS Sublimación (Escritorio)" de Stitch. Usa Rails 8, Tailwind CSS v4
 e importmap (sin build de JavaScript).
 
 ## Requisitos
@@ -47,6 +47,6 @@ La tarea `assets:precompile` ejecuta `tailwindcss:build` automáticamente.
 - `app/views/home/_*.html.erb`: partials de beneficios, productos y galería.
 - `app/assets/tailwind/application.css`: tema "Pastel Whimsy" (colores,
   tipografías, espaciados y utilidades).
-- `app/assets/images/nekis/`: imágenes locales del diseño.
+- `app/assets/images/nequis/`: imágenes locales del diseño.
 - `app/javascript/controllers/shop_controller.js`: feedback de carrito y
   favoritos.

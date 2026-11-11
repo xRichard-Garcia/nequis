@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
   # Landing y páginas institucionales.
-  get "sobre-nekis", to: "home#about", as: :about
+  get "sobre-nosotros", to: "home#about", as: :about
 
   # Defines the root path route ("/")
   root "home#index"
