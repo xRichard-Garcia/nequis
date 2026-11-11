@@ -2,12 +2,12 @@
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-lg pb-space-xl">
       <div class="lg:col-span-2 space-y-space-sm">
-        <div class="flex items-center gap-space-xs">
+        <a class="flex items-center gap-space-xs w-max" href="<%= root_path %>" aria-label="NEKIS, ir al inicio">
           <span class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
             <span class="material-symbols-outlined text-[20px]" aria-hidden="true">redeem</span>
           </span>
           <span class="font-headline-md text-headline-md text-primary tracking-wide">NEKIS</span>
-        </div>
+        </a>
         <p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
           Especialistas en sublimación artística, regalos con alma y personalización de tazas, prendas y recuerdos para momentos inolvidables.
         </p>
@@ -30,22 +30,23 @@
       <div>
         <p class="font-headline-sm text-headline-sm text-on-surface mb-space-sm">Explorar</p>
         <ul class="space-y-space-xs">
-          <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#catalogo">Catálogo Completo</a></li>
-          <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#catalogo">Tazas y Botellas</a></li>
-          <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#catalogo">Camisetas y Sudaderas</a></li>
-          <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#catalogo">Cojines y Decoración</a></li>
-          <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#catalogo">Packs para Eventos</a></li>
+          <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="<%= root_path(anchor: "catalogo") %>">Catálogo Completo</a></li>
+          <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="<%= root_path(anchor: "catalogo") %>">Tazas y Botellas</a></li>
+          <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="<%= root_path(anchor: "catalogo") %>">Camisetas y Sudaderas</a></li>
+          <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="<%= root_path(anchor: "catalogo") %>">Cojines y Decoración</a></li>
+          <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="<%= root_path(anchor: "catalogo") %>">Packs para Eventos</a></li>
         </ul>
       </div>
 
       <div>
         <p class="font-headline-sm text-headline-sm text-on-surface mb-space-sm">Sobre Nosotros</p>
         <ul class="space-y-space-xs">
-          <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#experiencia">Conoce la Sublimación</a></li>
-          <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#personaliza">Taller y Técnicas</a></li>
-          <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#momentos">Galería de Trabajos</a></li>
-          <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#momentos">Opiniones de Clientes</a></li>
-          <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#contacto">Preguntas Frecuentes</a></li>
+          <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="<%= about_path %>">Las Creadoras</a></li>
+          <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="<%= root_path(anchor: "experiencia") %>">Conoce la Sublimación</a></li>
+          <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="<%= root_path(anchor: "personaliza") %>">Taller y Técnicas</a></li>
+          <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="<%= root_path(anchor: "momentos") %>">Galería de Trabajos</a></li>
+          <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="<%= root_path(anchor: "momentos") %>">Opiniones de Clientes</a></li>
+          <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="<%= root_path(anchor: "contacto") %>">Preguntas Frecuentes</a></li>
         </ul>
       </div>
 
@@ -76,10 +77,6 @@
         <span class="px-space-sm py-1 bg-surface-container-highest rounded-full font-label-sm text-label-sm text-on-surface flex items-center gap-1">
           <span class="material-symbols-outlined text-[16px]" aria-hidden="true">credit_card</span>
           Tarjeta
-        </span>
-        <span class="px-space-sm py-1 bg-surface-container-highest rounded-full font-label-sm text-label-sm text-on-surface flex items-center gap-1">
-          <span class="material-symbols-outlined text-[16px]" aria-hidden="true">smartphone</span>
-          Bizum
         </span>
         <span class="px-space-sm py-1 bg-surface-container-highest rounded-full font-label-sm text-label-sm text-on-surface flex items-center gap-1">
           <span class="material-symbols-outlined text-[16px]" aria-hidden="true">payments</span>

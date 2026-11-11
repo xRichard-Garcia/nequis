@@ -1,0 +1,420 @@
+<% content_for :title, "Sobre NEKIS - Las Creadoras" %>
+<% content_for :meta_description, "Conoce a Joseling, Greyschell y Cinthia, las creadoras detrás de NEKIS. Creatividad, calidad y pasión por transformar tus ideas en regalos personalizados." %>
+<% content_for :head do %>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sobre NEKIS - Las Creadoras">
+  <meta property="og:description" content="Tres jóvenes emprendedoras unidas por el diseño, la creatividad y la personalización. Conoce la historia detrás de NEKIS.">
+  <meta property="og:image" content="<%= image_url "nekis/creadora-joseling.jpg" %>">
+<% end %>
+
+<main class="w-full pt-28 bg-background min-h-screen">
+  <div class="flex flex-col w-full">
+    <div class="relative w-full overflow-hidden">
+      <div class="absolute -top-32 -left-20 w-96 h-96 bg-primary-fixed rounded-full blur-3xl opacity-60 pointer-events-none" aria-hidden="true"></div>
+      <div class="absolute top-10 -right-20 w-[420px] h-[420px] bg-secondary-fixed rounded-full blur-3xl opacity-40 pointer-events-none" aria-hidden="true"></div>
+
+      <section class="relative max-w-7xl mx-auto px-6 lg:px-12 pt-space-lg pb-space-xl">
+        <div class="flex flex-wrap items-center gap-space-sm mb-space-md">
+          <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container-high text-tertiary font-label-sm text-label-sm">
+            <span class="material-symbols-outlined text-[15px]" aria-hidden="true">favorite</span>
+            Nuestra Historia &amp; Equipo
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-end">
+          <div class="lg:col-span-8 space-y-space-sm">
+            <h1 class="font-display-lg text-display-lg-mobile sm:text-display-lg text-primary tracking-tight leading-tight">
+              Detrás de cada detalle: Conoce a las creadoras de NEKIS
+            </h1>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="max-w-7xl mx-auto w-full px-6 lg:px-12 py-space-md" aria-labelledby="creadoras-title">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-xs">
+        <div>
+          <p class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-1">Las Mentes y Corazones</p>
+          <h2 id="creadoras-title" class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Las Creadoras de NEKIS</h2>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg items-stretch">
+        <article class="group rounded-3xl bg-surface-container-lowest p-space-lg shadow-[0_20px_40px_rgba(46,31,56,0.06)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute -right-10 -top-10 w-32 h-32 bg-primary-fixed rounded-full blur-2xl opacity-50 group-hover:scale-125 transition-transform duration-500" aria-hidden="true"></div>
+
+          <div>
+            <div class="relative w-full h-72 rounded-2xl overflow-hidden bg-surface-container mb-space-md shadow-inner">
+              <%= image_tag "nekis/creadora-joseling.jpg",
+                    alt: "Joseling Bermúdez sonriendo en su estudio creativo mientras trabaja en una tablet de diseño",
+                    class: "w-full h-full object-cover transition-transform duration-500 group-hover:scale-105",
+                    loading: "lazy",
+                    decoding: "async" %>
+
+              <div class="absolute top-3 left-3 flex gap-2">
+                <span class="px-3 py-1 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm shadow-sm backdrop-blur-md">Co-fundadora</span>
+              </div>
+              <div class="absolute bottom-3 right-3 w-10 h-10 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-primary shadow-sm">
+                <span class="material-symbols-outlined text-[20px]" aria-hidden="true">brush</span>
+              </div>
+            </div>
+
+            <div class="space-y-1 mb-space-sm">
+              <p class="font-label-md text-label-md text-primary flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[18px]" aria-hidden="true">draw</span>
+                Creatividad &amp; Diseño
+              </p>
+              <h3 class="font-headline-md text-headline-md text-on-surface">Joseling Bermúdez</h3>
+            </div>
+
+            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">
+              “La mente creativa encargada de dar vida visual a cada idea, ilustrar con amor y convertir pensamientos en diseños hermosos y vibrantes listos para sublimar.”
+            </p>
+          </div>
+
+          <div class="pt-space-sm flex flex-wrap gap-1.5">
+            <span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm group-hover:bg-tertiary-fixed transition-colors">#IlustraciónCreativa</span>
+            <span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm group-hover:bg-tertiary-fixed transition-colors">#DirecciónDeArte</span>
+            <span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm group-hover:bg-tertiary-fixed transition-colors">#DiseñoConAlma</span>
+          </div>
+        </article>
+
+        <article class="group rounded-3xl bg-surface-container-lowest p-space-lg shadow-[0_20px_40px_rgba(46,31,56,0.06)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute -right-10 -top-10 w-32 h-32 bg-secondary-fixed rounded-full blur-2xl opacity-60 group-hover:scale-125 transition-transform duration-500" aria-hidden="true"></div>
+
+          <div>
+            <div class="relative w-full h-72 rounded-2xl overflow-hidden bg-surface-container mb-space-md shadow-inner">
+              <%= image_tag "nekis/creadora-greyschell.jpg",
+                    alt: "Greyschell Alemán rodeada de cajas de regalo y papel de seda en tonos pastel",
+                    class: "w-full h-full object-cover transition-transform duration-500 group-hover:scale-105",
+                    loading: "lazy",
+                    decoding: "async" %>
+
+              <div class="absolute top-3 left-3 flex gap-2">
+                <span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm shadow-sm backdrop-blur-md">Co-fundadora</span>
+              </div>
+              <div class="absolute bottom-3 right-3 w-10 h-10 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-secondary shadow-sm">
+                <span class="material-symbols-outlined text-[20px]" aria-hidden="true">campaign</span>
+              </div>
+            </div>
+
+            <div class="space-y-1 mb-space-sm">
+              <p class="font-label-md text-label-md text-secondary flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[18px]" aria-hidden="true">forum</span>
+                Marketing &amp; Identidad de Marca
+              </p>
+              <h3 class="font-headline-md text-headline-md text-on-surface">Greyschell Alemán</h3>
+            </div>
+
+            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">
+              “La voz y el corazón comunicativo de NEKIS. Conecta con nuestra hermosa comunidad, cuida la identidad de nuestra marca y asegura que cada historia llegue al corazón adecuado.”
+            </p>
+          </div>
+
+          <div class="pt-space-sm flex flex-wrap gap-1.5">
+            <span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm group-hover:bg-secondary-fixed transition-colors">#BrandIdentity</span>
+            <span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm group-hover:bg-secondary-fixed transition-colors">#ComunidadNEKIS</span>
+            <span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm group-hover:bg-secondary-fixed transition-colors">#MarketingDigital</span>
+          </div>
+        </article>
+
+        <article class="group rounded-3xl bg-surface-container-lowest p-space-lg shadow-[0_20px_40px_rgba(46,31,56,0.06)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between relative overflow-hidden md:col-span-2 lg:col-span-1">
+          <div class="absolute -right-10 -top-10 w-32 h-32 bg-tertiary-fixed rounded-full blur-2xl opacity-60 group-hover:scale-125 transition-transform duration-500" aria-hidden="true"></div>
+
+          <div>
+            <div class="relative w-full h-72 rounded-2xl overflow-hidden bg-surface-container mb-space-md shadow-inner">
+              <%= image_tag "nekis/creadora-cinthia.jpg",
+                    alt: "Cinthia García revisando la calidad de un vaso térmico sublimado en el taller",
+                    class: "w-full h-full object-cover transition-transform duration-500 group-hover:scale-105",
+                    loading: "lazy",
+                    decoding: "async" %>
+
+              <div class="absolute top-3 left-3 flex gap-2">
+                <span class="px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm shadow-sm backdrop-blur-md">Co-fundadora</span>
+              </div>
+              <div class="absolute bottom-3 right-3 w-10 h-10 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-tertiary shadow-sm">
+                <span class="material-symbols-outlined text-[20px]" aria-hidden="true">precision_manufacturing</span>
+              </div>
+            </div>
+
+            <div class="space-y-1 mb-space-sm">
+              <p class="font-label-md text-label-md text-tertiary flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[18px]" aria-hidden="true">verified_user</span>
+                Gestión &amp; Personalización
+              </p>
+              <h3 class="font-headline-md text-headline-md text-on-surface">Cinthia García</h3>
+            </div>
+
+            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">
+              “La guardiana de la calidad y la producción. Coordina cada pedido, supervisa los tiempos, calibra los colores y se asegura de que cada taza, polera o cojín quede perfecto e impecable.”
+            </p>
+          </div>
+
+          <div class="pt-space-sm flex flex-wrap gap-1.5">
+            <span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm group-hover:bg-tertiary-fixed-dim transition-colors">#ControlDeCalidad</span>
+            <span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm group-hover:bg-tertiary-fixed-dim transition-colors">#AtenciónPersonalizada</span>
+            <span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm group-hover:bg-tertiary-fixed-dim transition-colors">#ProducciónConAmor</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto w-full px-6 lg:px-12 py-space-lg" aria-labelledby="historia-title">
+      <div class="rounded-3xl bg-surface-container-low p-space-lg lg:p-space-xl shadow-sm">
+        <div class="space-y-space-sm w-full">
+          <span class="inline-block px-3.5 py-1 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm">Nuestra Historia</span>
+          <h2 id="historia-title" class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">El origen de NEKIS: de una pasión compartida a un sueño hecho realidad</h2>
+          <p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+            NEKIS surge como una iniciativa de tres jóvenes emprendedoras que comparten el interés por el diseño, la creatividad y el mundo de la personalización.
+          </p>
+          <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            A partir de la idea de crear una marca que permitiera a las personas expresar su personalidad a través de productos únicos, nació este proyecto enfocado en la sublimación.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto w-full px-6 lg:px-12 py-space-md" aria-label="Misión y visión de NEKIS">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+        <div class="p-space-lg rounded-3xl bg-surface-container-lowest border-2 border-primary-fixed shadow-[0_16px_36px_rgba(46,31,56,0.04)] relative overflow-hidden flex flex-col justify-between">
+          <div class="absolute -right-8 -top-8 w-28 h-28 bg-primary-fixed rounded-full blur-2xl opacity-40 pointer-events-none" aria-hidden="true"></div>
+          <div class="space-y-space-sm relative z-10">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm w-max">
+              <span class="material-symbols-outlined text-[16px]" aria-hidden="true">flag</span>
+              <span>Propósito</span>
+            </div>
+            <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Nuestra misión</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              “Crear productos personalizados mediante la sublimación, combinando creatividad, calidad y originalidad para hacer realidad las ideas de nuestros clientes.”
+            </p>
+          </div>
+          <div class="pt-space-md flex items-center gap-2 text-primary font-label-sm text-label-sm">
+            <span class="material-symbols-outlined text-[18px]" aria-hidden="true">verified</span>
+            <span>Compromiso artesanal en cada entrega</span>
+          </div>
+        </div>
+
+        <div class="p-space-lg rounded-3xl bg-surface-container-lowest border-2 border-secondary-fixed shadow-[0_16px_36px_rgba(46,31,56,0.04)] relative overflow-hidden flex flex-col justify-between">
+          <div class="absolute -right-8 -top-8 w-28 h-28 bg-secondary-fixed rounded-full blur-2xl opacity-40 pointer-events-none" aria-hidden="true"></div>
+          <div class="space-y-space-sm relative z-10">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm w-max">
+              <span class="material-symbols-outlined text-[16px]" aria-hidden="true">visibility</span>
+              <span>Futuro</span>
+            </div>
+            <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Nuestra visión</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              “Ser una marca reconocida por transformar ideas en productos únicos, destacando por nuestra creatividad, calidad e innovación.”
+            </p>
+          </div>
+          <div class="pt-space-md flex items-center gap-2 text-secondary font-label-sm text-label-sm">
+            <span class="material-symbols-outlined text-[18px]" aria-hidden="true">stars</span>
+            <span>Innovación constante con identidad propia</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto w-full px-6 lg:px-12 py-space-md" aria-labelledby="valores-title">
+      <div class="text-center max-w-2xl mx-auto mb-space-xl">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">El Manifiesto NEKIS</span>
+        <h2 id="valores-title" class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-space-xs mb-space-xs">Nuestros Valores</h2>
+        <p class="font-body-md text-body-md text-on-surface-variant">Los cinco pilares esenciales que guían cada diseño, cada estampación y cada sonrisa entregada.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+        <div class="rounded-3xl bg-surface-container-lowest p-space-lg shadow-[0_12px_32px_rgba(46,31,56,0.05)] hover:shadow-lg transition-shadow flex flex-col justify-between">
+          <div class="space-y-space-md">
+            <div class="w-14 h-14 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary">
+              <span class="material-symbols-outlined text-[28px]" aria-hidden="true">palette</span>
+            </div>
+            <div class="space-y-space-xs">
+              <h3 class="font-headline-sm text-headline-sm text-on-surface">Creatividad</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Ideas originales en cada diseño.</p>
+            </div>
+          </div>
+          <div class="mt-space-md pt-space-sm">
+            <span class="inline-flex items-center gap-1 text-primary font-label-sm text-label-sm font-bold">
+              <span class="material-symbols-outlined text-[16px]" aria-hidden="true">brush</span>
+              Diseños que sorprenden
+            </span>
+          </div>
+        </div>
+
+        <div class="rounded-3xl bg-surface-container-lowest p-space-lg shadow-[0_12px_32px_rgba(46,31,56,0.05)] hover:shadow-lg transition-shadow flex flex-col justify-between">
+          <div class="space-y-space-md">
+            <div class="w-14 h-14 rounded-2xl bg-secondary-fixed flex items-center justify-center text-secondary">
+              <span class="material-symbols-outlined text-[28px]" aria-hidden="true">verified</span>
+            </div>
+            <div class="space-y-space-xs">
+              <h3 class="font-headline-sm text-headline-sm text-on-surface">Calidad</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Cuidado en cada detalle.</p>
+            </div>
+          </div>
+          <div class="mt-space-md pt-space-sm">
+            <span class="inline-flex items-center gap-1 text-secondary font-label-sm text-label-sm font-bold">
+              <span class="material-symbols-outlined text-[16px]" aria-hidden="true">task_alt</span>
+              Sublimación duradera
+            </span>
+          </div>
+        </div>
+
+        <div class="rounded-3xl bg-surface-container-lowest p-space-lg shadow-[0_12px_32px_rgba(46,31,56,0.05)] hover:shadow-lg transition-shadow flex flex-col justify-between">
+          <div class="space-y-space-md">
+            <div class="w-14 h-14 rounded-2xl bg-tertiary-fixed flex items-center justify-center text-tertiary">
+              <span class="material-symbols-outlined text-[28px]" aria-hidden="true">fingerprint</span>
+            </div>
+            <div class="space-y-space-xs">
+              <h3 class="font-headline-sm text-headline-sm text-on-surface">Originalidad</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Productos con identidad propia.</p>
+            </div>
+          </div>
+          <div class="mt-space-md pt-space-sm">
+            <span class="inline-flex items-center gap-1 text-tertiary font-label-sm text-label-sm font-bold">
+              <span class="material-symbols-outlined text-[16px]" aria-hidden="true">star</span>
+              100% personalizados
+            </span>
+          </div>
+        </div>
+
+        <div class="rounded-3xl bg-surface-container-lowest p-space-lg shadow-[0_12px_32px_rgba(46,31,56,0.05)] hover:shadow-lg transition-shadow flex flex-col justify-between">
+          <div class="space-y-space-md">
+            <div class="w-14 h-14 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary">
+              <span class="material-symbols-outlined text-[28px]" aria-hidden="true">handshake</span>
+            </div>
+            <div class="space-y-space-xs">
+              <h3 class="font-headline-sm text-headline-sm text-on-surface">Compromiso</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Responsabilidad con nuestros clientes.</p>
+            </div>
+          </div>
+          <div class="mt-space-md pt-space-sm">
+            <span class="inline-flex items-center gap-1 text-primary font-label-sm text-label-sm font-bold">
+              <span class="material-symbols-outlined text-[16px]" aria-hidden="true">support_agent</span>
+              Cercanía en todo momento
+            </span>
+          </div>
+        </div>
+
+        <div class="rounded-3xl bg-surface-container-lowest p-space-lg shadow-[0_12px_32px_rgba(46,31,56,0.05)] hover:shadow-lg transition-shadow flex flex-col justify-between md:col-span-2 lg:col-span-1">
+          <div class="space-y-space-md">
+            <div class="w-14 h-14 rounded-2xl bg-secondary-fixed flex items-center justify-center text-secondary">
+              <span class="material-symbols-outlined text-[28px]" aria-hidden="true">favorite</span>
+            </div>
+            <div class="space-y-space-xs">
+              <h3 class="font-headline-sm text-headline-sm text-on-surface">Pasión</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Amor por lo que hacemos.</p>
+            </div>
+          </div>
+          <div class="mt-space-md pt-space-sm">
+            <span class="inline-flex items-center gap-1 text-secondary font-label-sm text-label-sm font-bold">
+              <span class="material-symbols-outlined text-[16px]" aria-hidden="true">volunteer_activism</span>
+              Hecho con el corazón
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto w-full px-6 lg:px-12 py-space-xl" aria-labelledby="consejos-title">
+      <div data-controller="creator-tabs" class="p-space-lg rounded-3xl bg-surface-container-lowest shadow-[0_16px_40px_rgba(46,31,56,0.04)]">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-md">
+          <div>
+            <h2 id="consejos-title" class="font-headline-sm text-headline-sm text-on-surface">Un tip de cada creadora para tu regalo perfecto</h2>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Haz clic para descubrir sus secretos favoritos de personalización</p>
+          </div>
+
+          <div class="flex items-center gap-1.5 p-1 bg-surface-container rounded-full" id="creator-tabs" role="tablist" aria-label="Consejos de las creadoras">
+            <button
+              type="button"
+              id="tab-btn-joseling"
+              class="px-4 py-2 rounded-full font-label-sm text-label-sm transition-all flex items-center gap-1 text-on-surface-variant hover:text-on-surface"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tab-joseling"
+              tabindex="-1"
+              data-creator-tabs-target="tab"
+              data-key="joseling"
+              data-action="click->creator-tabs#select keydown->creator-tabs#navigate"
+            >
+              <span class="material-symbols-outlined text-[16px]" aria-hidden="true">palette</span>
+              Joseling
+            </button>
+            <button
+              type="button"
+              id="tab-btn-greyschell"
+              class="px-4 py-2 rounded-full font-label-sm text-label-sm transition-all flex items-center gap-1 text-on-surface-variant hover:text-on-surface"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tab-greyschell"
+              tabindex="-1"
+              data-creator-tabs-target="tab"
+              data-key="greyschell"
+              data-action="click->creator-tabs#select keydown->creator-tabs#navigate"
+            >
+              <span class="material-symbols-outlined text-[16px]" aria-hidden="true">sms</span>
+              Greyschell
+            </button>
+            <button
+              type="button"
+              id="tab-btn-cinthia"
+              class="px-4 py-2 rounded-full font-label-sm text-label-sm transition-all flex items-center gap-1 bg-primary text-on-primary"
+              role="tab"
+              aria-selected="true"
+              aria-controls="tab-cinthia"
+              data-creator-tabs-target="tab"
+              data-key="cinthia"
+              data-action="click->creator-tabs#select keydown->creator-tabs#navigate"
+            >
+              <span class="material-symbols-outlined text-[16px]" aria-hidden="true">task_alt</span>
+              Cinthia
+            </button>
+          </div>
+        </div>
+
+        <div id="tab-joseling" class="hidden flex-col md:flex-row items-center gap-space-lg p-space-md rounded-2xl bg-surface-container-low" role="tabpanel" aria-labelledby="tab-btn-joseling" data-creator-tabs-target="panel" data-key="joseling">
+          <div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center text-primary flex-shrink-0">
+            <span class="material-symbols-outlined text-[32px]" aria-hidden="true">auto_fix_high</span>
+          </div>
+          <div class="flex-1 space-y-1">
+            <p class="font-headline-sm text-headline-sm text-primary">El consejo de diseño de Joseling</p>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              “No te preocupes si no tienes una foto con resolución de estudio. Si tiene valor emocional, nosotras la vectorizamos, retocamos luces y estilizamos para que resalte con nitidez absoluta sobre cualquier superficie cerámica o textil.”
+            </p>
+          </div>
+          <span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm flex-shrink-0">
+            Ilustración &amp; Color
+          </span>
+        </div>
+
+        <div id="tab-greyschell" class="hidden flex-col md:flex-row items-center gap-space-lg p-space-md rounded-2xl bg-surface-container-low" role="tabpanel" aria-labelledby="tab-btn-greyschell" data-creator-tabs-target="panel" data-key="greyschell">
+          <div class="w-16 h-16 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary flex-shrink-0">
+            <span class="material-symbols-outlined text-[32px]" aria-hidden="true">sentiment_satisfied</span>
+          </div>
+          <div class="flex-1 space-y-1">
+            <p class="font-headline-sm text-headline-sm text-secondary">El tip emocional de Greyschell</p>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              “Los mejores regalos son aquellos que rescatan pequeños chistes internos o fechas clave. Añadir un código Spotify que reproduzca su canción preferida al escanear la taza o una dedicatoria oculta en la base siempre causa impacto.”
+            </p>
+          </div>
+          <span class="px-3 py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm flex-shrink-0">
+            Experiencia &amp; Emoción
+          </span>
+        </div>
+
+        <div id="tab-cinthia" class="flex flex-col md:flex-row items-center gap-space-lg p-space-md rounded-2xl bg-surface-container-low" role="tabpanel" aria-labelledby="tab-btn-cinthia" data-creator-tabs-target="panel" data-key="cinthia">
+          <div class="w-16 h-16 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary flex-shrink-0">
+            <span class="material-symbols-outlined text-[32px]" aria-hidden="true">format_image_left</span>
+          </div>
+          <div class="flex-1 space-y-1">
+            <p class="font-headline-sm text-headline-sm text-tertiary">El secreto de cuidado de Cinthia</p>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              “La sublimación polimeriza la tinta directo en la capa cerámica: puedes meter nuestras tazas al lavavajillas sin miedo. Para las prendas de poliéster de tacto algodón, recomendamos lavarlas al revés para que se mantengan suaves como el primer día.”
+            </p>
+          </div>
+          <span class="px-3 py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm flex-shrink-0">
+            Durabilidad &amp; Técnica
+          </span>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
