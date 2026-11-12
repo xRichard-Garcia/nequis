@@ -1,14 +1,12 @@
 <footer id="contacto" class="bg-brand-cream border-t border-brand-border text-brand-dark py-16 scroll-mt-24" data-purpose="main-footer">
   <div class="max-w-4xl mx-auto px-6 text-center flex flex-col items-center">
     <%= link_to root_path, class: "flex flex-col items-center group mb-6", aria: { label: "NEQUIS, ir al inicio" } do %>
-      <div class="flex items-center space-x-1.5">
-        <svg class="w-7 h-7 text-brand-purple fill-current transition-transform duration-300 group-hover:rotate-12" viewBox="0 0 32 32" aria-hidden="true">
-          <path d="M16 4c-1.3 0-2.3 1-2.3 2.3 0 .8.4 1.5 1.1 1.9-.9.4-1.7 1-2.4 1.7-.4-.7-1.1-1.1-1.9-1.1-1.3 0-2.3 1-2.3 2.3 0 .7.3 1.3.8 1.7-.8.7-1.5 1.5-1.9 2.5-.7-.4-1.5-.5-2.2-.2-1.2.5-1.8 1.8-1.3 3 .5 1.2 1.8 1.8 3 1.3.6-.3 1-.7 1.3-1.3.6 1 1.4 1.8 2.3 2.4-.2.8-.1 1.6.4 2.3.7 1.1 2.1 1.4 3.2.7 1.1-.7 1.4-2.1.7-3.2-.3-.5-.7-.9-1.3-1.1.8-.7 1.4-1.5 1.9-2.5.7.4 1.5.5 2.2.2 1.2-.5 1.8-1.8 1.3-3-.5-1.2-1.8-1.8-3-1.3-.6.3-1 .7-1.3 1.3-.6-1-1.4-1.8-2.3-2.4.2-.8.1-1.6-.4-2.3-.6-.8-1.6-1.3-2.6-1.3z" fill="#372A7A"></path>
-          <circle cx="16" cy="16" fill="#F5B726" r="3.5"></circle>
-        </svg>
-        <span class="text-2xl font-black tracking-tight text-brand-purple">NEQUIS</span>
-      </div>
-      <span class="text-[10px] font-bold tracking-[0.25em] text-brand-muted uppercase mt-0.5">Sublimación &amp; DTF</span>
+      <%= image_tag "nequis/nequis-logo.png",
+            alt: "NEQUIS",
+            class: "h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105",
+            width: 1119,
+            height: 629 %>
+      <span class="text-[10px] font-bold tracking-[0.25em] text-brand-muted uppercase -mt-1">Sublimación &amp; DTF</span>
     <% end %>
 
     <p class="font-editorial text-xl sm:text-2xl text-brand-dark font-normal italic max-w-md mb-2">
