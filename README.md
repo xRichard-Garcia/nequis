@@ -1,10 +1,11 @@
 # NEQUIS Sublimación
 
-Landing page, página institucional y muro de opiniones de **NEQUIS Sublimación**,
-recreados en Rails a partir de los diseños "Inicio - NEQUIS (Diseño Estilo Oasis
-Editorial)", "Sobre NEQUIS - Las Creadoras (Estilo Oasis Editorial)" y
-"Opiniones de Clientes - NEQUIS (Estilo Oasis Editorial)" de Stitch. Usa Rails 8,
-Tailwind CSS v4 e importmap (sin build de JavaScript).
+Landing page, servicios de personalización, página institucional y muro de
+opiniones de **NEQUIS Sublimación**, recreados en Rails a partir de los diseños
+"Inicio - NEQUIS (Diseño Estilo Oasis Editorial)", "Servicios - NEQUIS
+(Sublimación, DTF & Serigrafía)", "Sobre NEQUIS - Las Creadoras (Estilo Oasis
+Editorial)" y "Opiniones de Clientes - NEQUIS (Estilo Oasis Editorial)" de
+Stitch. Usa Rails 8, Tailwind CSS v4 e importmap (sin build de JavaScript).
 
 ## Requisitos
 
@@ -45,6 +46,7 @@ La tarea `assets:precompile` ejecuta `tailwindcss:build` automáticamente.
 ## Estructura principal
 
 - `app/views/home/index.html.erb`: landing editorial completa.
+- `app/views/home/services.html.erb`: servicios de sublimación, DTF y serigrafía.
 - `app/views/home/about.html.erb`: historia y creadoras.
 - `app/views/home/opinions.html.erb`: opiniones, testimonios y experiencias.
 - `app/views/shared/_oasis_header.html.erb` y `_oasis_footer.html.erb`: navegación

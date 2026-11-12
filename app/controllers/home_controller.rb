@@ -5,6 +5,9 @@ class HomeController < ApplicationController
   def about
   end
 
+  def services
+  end
+
   def opinions
   end
 end

@@ -1,9 +1,10 @@
 <header class="sticky top-0 z-40 bg-brand-cream/90 backdrop-blur-md border-b border-brand-border/80" data-purpose="main-navigation" data-controller="mobile-menu" data-action="click@window->mobile-menu#closeOnOutsideClick">
   <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-    <nav aria-label="Navegación principal" class="hidden lg:flex items-center space-x-9 text-xs font-medium tracking-wide uppercase text-brand-dark/80">
+    <nav aria-label="Navegación principal" class="hidden lg:flex items-center space-x-6 xl:space-x-9 text-xs font-medium tracking-wide uppercase text-brand-dark/80">
       <%= link_to "Inicio", root_path, class: current_page?(root_path) ? "text-brand-dark font-semibold border-b border-brand-dark pb-0.5" : "hover:text-brand-purple transition-colors", aria: current_page?(root_path) ? { current: "page" } : {} %>
       <%= link_to "Colección", root_path(anchor: "coleccion"), class: "hover:text-brand-purple transition-colors" %>
       <%= link_to "Personalizar", root_path(anchor: "personalizacion"), class: "hover:text-brand-purple transition-colors" %>
+      <%= link_to "Servicios", services_path, class: current_page?(services_path) ? "text-brand-dark font-semibold border-b border-brand-dark pb-0.5" : "hover:text-brand-purple transition-colors", aria: current_page?(services_path) ? { current: "page" } : {} %>
       <%= link_to "Opiniones", opinions_path, class: current_page?(opinions_path) ? "text-brand-dark font-semibold border-b border-brand-dark pb-0.5" : "hover:text-brand-purple transition-colors", aria: current_page?(opinions_path) ? { current: "page" } : {} %>
       <%= link_to "Sobre nosotros", about_path, class: current_page?(about_path) ? "text-brand-dark font-semibold border-b border-brand-dark pb-0.5" : "hover:text-brand-purple transition-colors", aria: current_page?(about_path) ? { current: "page" } : {} %>
     </nav>
@@ -57,6 +58,7 @@
       <%= link_to "Inicio", root_path, class: "py-3 border-b border-brand-border/60 hover:text-brand-purple transition-colors #{current_page?(root_path) ? 'text-brand-purple' : ''}", aria: current_page?(root_path) ? { current: "page" } : {} %>
       <%= link_to "Colección", root_path(anchor: "coleccion"), class: "py-3 border-b border-brand-border/60 hover:text-brand-purple transition-colors" %>
       <%= link_to "Personalizar", root_path(anchor: "personalizacion"), class: "py-3 border-b border-brand-border/60 hover:text-brand-purple transition-colors" %>
+      <%= link_to "Servicios", services_path, class: "py-3 border-b border-brand-border/60 hover:text-brand-purple transition-colors #{current_page?(services_path) ? 'text-brand-purple' : ''}", aria: current_page?(services_path) ? { current: "page" } : {} %>
       <%= link_to "Opiniones", opinions_path, class: "py-3 border-b border-brand-border/60 hover:text-brand-purple transition-colors #{current_page?(opinions_path) ? 'text-brand-purple' : ''}", aria: current_page?(opinions_path) ? { current: "page" } : {} %>
       <%= link_to "Sobre nosotros", about_path, class: "py-3 border-b border-brand-border/60 hover:text-brand-purple transition-colors #{current_page?(about_path) ? 'text-brand-purple' : ''}", aria: current_page?(about_path) ? { current: "page" } : {} %>
     </nav>

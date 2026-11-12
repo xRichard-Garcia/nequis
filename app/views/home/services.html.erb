@@ -1,0 +1,190 @@
+<% content_for :title, "Servicios de Personalización - NEQUIS" %>
+<% content_for :meta_description, "Sublimación digital, DTF textil y serigrafía artesanal. Descubre la técnica ideal para personalizar tazas, poleras, botellas, tote bags y pedidos corporativos con NEQUIS." %>
+<% content_for :theme_color, "#FAFAF7" %>
+<% content_for :body_class, "bg-brand-cream text-brand-dark font-brand-sans antialiased selection:bg-brand-purple selection:text-white" %>
+<% content_for :oasis_layout, true %>
+<% content_for :head do %>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Servicios de Personalización - NEQUIS">
+  <meta property="og:description" content="Tres técnicas de estampado de alta calidad: Sublimación Digital, DTF Textil y Serigrafía Artesanal. Asesoría técnica para elegir la mejor opción.">
+  <meta property="og:image" content="<%= image_url "nequis/taza.jpeg" %>">
+<% end %>
+
+<main id="servicios">
+  <div class="flex w-full flex-col">
+    <!-- Breadcrumb / Brand Tag -->
+    <section class="w-full border-b border-brand-border/60 bg-[#FAF5EB] px-6 py-3.5">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3">
+        <div class="flex items-center space-x-2 text-xs uppercase tracking-wider text-brand-muted">
+          <%= link_to "Inicio", root_path, class: "hover:text-brand-purple transition-colors" %>
+          <span>/</span>
+          <span class="font-semibold text-brand-purple">• Servicios &amp; Técnicas • NEQUIS</span>
+        </div>
+        <div class="hidden items-center gap-1.5 text-xs text-brand-muted sm:flex">
+          <span class="material-symbols-outlined text-base text-brand-purple" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">verified</span>
+          Asesoría técnica personalizada
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero editorial -->
+    <section class="relative w-full overflow-hidden border-b border-brand-border/50 bg-brand-cream px-6 pb-14 pt-16 lg:pb-16 lg:pt-20">
+      <div class="pointer-events-none absolute -top-24 right-10 h-96 w-96 rounded-full bg-brand-soft-lilac/60 blur-3xl" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute -left-20 top-72 h-80 w-80 rounded-full bg-brand-yellow/15 blur-3xl" aria-hidden="true"></div>
+
+      <div class="relative mx-auto flex max-w-5xl flex-col items-center text-center">
+        <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-brand-border bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-brand-purple shadow-sm">
+          <span class="material-symbols-outlined text-[16px] text-brand-purple" aria-hidden="true">verified</span>
+          Técnicas de Estampado &amp; Personalización
+        </div>
+
+        <h1 class="max-w-4xl font-editorial text-4xl leading-tight tracking-tight text-brand-dark sm:text-5xl lg:text-6xl">
+          Nuestros Servicios de
+          <span class="italic text-brand-purple">Personalización</span>
+        </h1>
+
+        <p class="mt-5 max-w-3xl text-base leading-relaxed text-brand-muted sm:text-lg">
+          En NEQUIS dominamos las 3 técnicas esenciales de personalización de alta calidad:
+          <strong class="font-semibold text-brand-dark">Sublimación Digital</strong>,
+          <strong class="font-semibold text-brand-dark">DTF Textil</strong> y
+          <strong class="font-semibold text-brand-dark">Serigrafía Artesanal</strong>.
+          Te asesoramos para que cada idea se estampe en el soporte perfecto.
+        </p>
+      </div>
+    </section>
+
+    <!-- Tarjetas de servicios -->
+    <section class="w-full border-b border-brand-border/60 bg-brand-surface/60 px-6 py-16 lg:px-8 lg:py-20">
+      <div class="mx-auto max-w-7xl">
+        <div class="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-3">
+
+          <!-- Sublimación Digital -->
+          <article class="group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-brand-border bg-white p-7 shadow-sm transition-all duration-300 hover:shadow-xl md:p-9">
+            <div class="absolute inset-x-0 top-0 h-1.5 bg-linear-to-r from-brand-purple to-purple-400" aria-hidden="true"></div>
+            <div>
+              <div class="mb-6 mt-1 flex flex-wrap items-center gap-2">
+                <span class="rounded-full border border-brand-purple/20 bg-brand-purple/10 px-3 py-1 text-[11px] font-semibold text-brand-purple">Fusión Molecular 200°C</span>
+                <span class="rounded-full border border-brand-border bg-[#F4EEE6] px-3 py-1 text-[11px] font-semibold text-brand-dark">Ideal Rígidos &amp; Cerámica</span>
+              </div>
+
+              <div class="mb-5 flex items-center gap-4">
+                <div>
+                  <h2 class="font-editorial text-2xl font-bold leading-snug text-brand-dark md:text-3xl">Sublimación Digital</h2>
+                  <span class="text-[10px] font-bold uppercase tracking-[0.18em] text-brand-purple">Acabado fotográfico integrado</span>
+                </div>
+              </div>
+
+              <p class="mb-6 text-sm leading-relaxed text-brand-muted">
+                Fusión de tinta en el poro del polímero o cerámica, logrando un acabado suave al tacto, cero relieve, lavable en lavavajillas y con colores vibrantes y fotográficos.
+              </p>
+
+              <div class="mb-6 rounded-2xl border border-brand-border bg-[#FAF8F5] p-4">
+                <span class="mb-2 flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-brand-purple">
+                  Aplicaciones ideales
+                </span>
+                <p class="text-xs font-medium leading-relaxed text-brand-dark/80">
+                  Tazas cerámicas, botellas térmicas inox, termos, llaveros, cojines y polímeros.
+                </p>
+              </div>
+            </div>
+
+          </article>
+
+          <!-- DTF Textil -->
+          <article class="group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-brand-border bg-white p-7 shadow-sm transition-all duration-300 hover:shadow-xl md:p-9">
+            <div class="absolute inset-x-0 top-0 h-1.5 bg-linear-to-r from-brand-yellow/60 to-brand-yellow" aria-hidden="true"></div>
+            <div>
+              <div class="mb-6 mt-1 flex flex-wrap items-center gap-2">
+                <span class="rounded-full border border-brand-yellow/60 bg-brand-yellow/20 px-3 py-1 text-[11px] font-semibold text-[#6b5200]">Ultra-Flex Alta Definición</span>
+                <span class="rounded-full border border-brand-border bg-[#F4EEE6] px-3 py-1 text-[11px] font-semibold text-brand-dark">Ideal Textil Algodón</span>
+              </div>
+
+              <div class="mb-5 flex items-center gap-4">
+
+                <div>
+                  <h2 class="font-editorial text-2xl font-bold leading-snug text-brand-dark md:text-3xl">DTF Textil</h2>
+                  <span class="text-[10px] font-bold uppercase tracking-[0.18em] text-[#766300]">Direct to Film de última generación</span>
+                </div>
+              </div>
+
+              <p class="mb-6 text-sm leading-relaxed text-brand-muted">
+                Tecnología digital de vanguardia que imprime sobre film con tintas elásticas y polvo adhesivo transferido a calor, permitiendo estampar sobre cualquier color y tejido sin fondo blanco tosco.
+              </p>
+
+              <div class="mb-6 rounded-2xl border border-brand-border bg-[#FAF8F5] p-4">
+                <p class="text-xs font-medium leading-relaxed text-brand-dark/80">
+                  Poleras 100% algodón, polerones, tote bags canvas, mezclilla, gorras y prendas oscuras o claras.
+                </p>
+              </div>
+            </div>
+
+          </article>
+
+          <!-- Serigrafía Artesanal -->
+          <article class="group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-brand-border bg-white p-7 shadow-sm transition-all duration-300 hover:shadow-xl md:p-9">
+            <div class="absolute inset-x-0 top-0 h-1.5 bg-linear-to-r from-brand-indigo to-brand-navy" aria-hidden="true"></div>
+            <div>
+              <div class="mb-6 mt-1 flex flex-wrap items-center gap-2">
+                <span class="rounded-full border border-brand-indigo/20 bg-brand-indigo/10 px-3 py-1 text-[11px] font-semibold text-brand-indigo">Técnica Clásica &amp; Tirajes Masivos</span>
+                <span class="rounded-full border border-brand-border bg-[#F4EEE6] px-3 py-1 text-[11px] font-semibold text-brand-dark">Máxima Rentabilidad</span>
+              </div>
+
+              <div class="mb-5 flex items-center gap-4">
+                <div>
+                  <h2 class="font-editorial text-2xl font-bold leading-snug text-brand-dark md:text-3xl">Serigrafía Artesanal</h2>
+                </div>
+              </div>
+
+              <p class="mb-6 text-sm leading-relaxed text-brand-muted">
+                Impresión mediante matrices y mallas con tintas ecológicas de alta densidad y curado térmico. Es el estándar de oro para reproducir logotipos y diseños con máxima fidelidad de color plano y durabilidad extrema en pedidos por volumen.
+              </p>
+
+              <div class="mb-6 rounded-2xl border border-brand-border bg-[#FAF8F5] p-4">
+                <span class="mb-2 flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-brand-indigo">
+
+                  Aplicaciones ideales
+                </span>
+                <p class="text-xs font-medium leading-relaxed text-brand-dark/80">
+                  Merchandising corporativo, uniformes de trabajo, poleras para eventos, bolsas ecológicas de tela y tirajes de más de 30 unidades.
+                </p>
+              </div>
+            </div>
+
+
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Corporativo -->
+    <section class="w-full bg-brand-cream px-6 py-12 lg:px-8 lg:py-16">
+      <div class="mx-auto max-w-7xl">
+        <div class="relative flex flex-col items-start justify-between gap-8 overflow-hidden rounded-3xl bg-brand-navy p-8 text-white shadow-xl sm:p-12 lg:flex-row lg:items-center lg:p-16">
+          <div class="pointer-events-none absolute -right-20 -top-24 h-72 w-72 rounded-full bg-brand-purple/40 blur-3xl" aria-hidden="true"></div>
+          <div class="pointer-events-none absolute -bottom-24 left-1/3 h-64 w-64 rounded-full bg-brand-yellow/10 blur-3xl" aria-hidden="true"></div>
+
+          <div class="relative max-w-2xl space-y-4">
+            <span class="block text-[11px] font-semibold uppercase tracking-[0.25em] text-brand-yellow">Asesoría sin costo</span>
+            <h2 class="font-editorial text-3xl leading-tight text-white sm:text-4xl lg:text-5xl">
+              ¿No sabés qué técnica elegir?
+            </h2>
+            <p class="text-sm leading-relaxed text-white/70 sm:text-base">
+              Contanos qué producto querés personalizar y te recomendamos la técnica ideal según el material, la cantidad y el acabado que buscás.
+            </p>
+          </div>
+
+          <div class="relative flex w-full flex-col gap-3 sm:flex-row lg:w-auto lg:flex-col xl:flex-row">
+            <a href="https://wa.me/50577040918?text=Hola%20NEQUIS%2C%20necesito%20asesor%C3%ADa%20para%20elegir%20la%20t%C3%A9cnica%20de%20personalizaci%C3%B3n%20ideal."
+               class="whitespace-nowrap rounded-full bg-brand-yellow px-8 py-3.5 text-center text-xs font-semibold uppercase tracking-[0.2em] text-brand-purple transition-colors hover:bg-white"
+               target="_blank" rel="noopener noreferrer">
+              Consultar por WhatsApp
+            </a>
+            <%= link_to "Ver Catálogo", root_path(anchor: "coleccion"),
+                  class: "whitespace-nowrap rounded-full border border-white/30 px-8 py-3.5 text-center text-xs font-medium uppercase tracking-[0.2em] text-white transition-colors hover:bg-white/10" %>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
