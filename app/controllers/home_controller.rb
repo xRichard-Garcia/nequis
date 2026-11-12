@@ -4,4 +4,7 @@ class HomeController < ApplicationController
 
   def about
   end
+
+  def opinions
+  end
 end

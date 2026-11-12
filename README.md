@@ -1,8 +1,9 @@
 # NEQUIS Sublimación
 
-Landing page y página institucional de **NEQUIS Sublimación**, recreadas en Rails
-a partir de los diseños "Inicio - NEQUIS (Diseño Estilo Oasis Editorial)" y
-"Sobre NEQUIS - Las Creadoras (Estilo Oasis Editorial)" de Stitch. Usa Rails 8,
+Landing page, página institucional y muro de opiniones de **NEQUIS Sublimación**,
+recreados en Rails a partir de los diseños "Inicio - NEQUIS (Diseño Estilo Oasis
+Editorial)", "Sobre NEQUIS - Las Creadoras (Estilo Oasis Editorial)" y
+"Opiniones de Clientes - NEQUIS (Estilo Oasis Editorial)" de Stitch. Usa Rails 8,
 Tailwind CSS v4 e importmap (sin build de JavaScript).
 
 ## Requisitos
@@ -45,12 +46,12 @@ La tarea `assets:precompile` ejecuta `tailwindcss:build` automáticamente.
 
 - `app/views/home/index.html.erb`: landing editorial completa.
 - `app/views/home/about.html.erb`: historia y creadoras.
+- `app/views/home/opinions.html.erb`: opiniones, testimonios y experiencias.
 - `app/views/shared/_oasis_header.html.erb` y `_oasis_footer.html.erb`: navegación
-  y pie de la landing.
-- `app/views/shared/_oasis_about_header.html.erb` y `_oasis_about_footer.html.erb`:
-  navegación y pie de la página institucional.
+  y pie de las páginas editoriales.
 - `app/views/shared/`: header, footer y botón flotante de WhatsApp de respaldo.
-- `app/views/home/_*.html.erb`: partials de beneficios, productos y galería.
+- `app/views/home/_*.html.erb`: partials de beneficios, productos, galería y
+  calificaciones.
 - `app/assets/tailwind/application.css`: temas "Oasis Editorial" y "Pastel Whimsy"
   (colores, tipografías, espaciados y utilidades).
 - `app/assets/images/nequis/`: imágenes locales del diseño.

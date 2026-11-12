@@ -32,11 +32,7 @@
     <a href="#inicio" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:rounded-full focus:bg-primary focus:px-5 focus:py-3 focus:text-on-primary">Saltar al contenido</a>
     <p class="sr-only" role="status" aria-live="polite" data-shop-target="status"></p>
 
-    <% if content_for?(:oasis_about_layout) %>
-      <%= render "shared/oasis_about_header" %>
-      <%= yield %>
-      <%= render "shared/oasis_about_footer" %>
-    <% elsif content_for?(:oasis_layout) %>
+    <% if content_for?(:oasis_layout) %>
       <%= render "shared/oasis_header" %>
       <%= yield %>
       <%= render "shared/oasis_footer" %>

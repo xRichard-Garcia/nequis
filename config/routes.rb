@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   # Landing y páginas institucionales.
   get "sobre-nosotros", to: "home#about", as: :about
+  get "opiniones", to: "home#opinions", as: :opinions
 
   # Defines the root path route ("/")
   root "home#index"

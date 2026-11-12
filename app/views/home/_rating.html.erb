@@ -1,0 +1,5 @@
+<div class="flex text-brand-yellow <%= local_assigns[:class] %>" role="img" aria-label="Calificación: 5 de 5 estrellas">
+  <% 5.times do %>
+    <span class="material-symbols-outlined <%= local_assigns.fetch(:icon_class, "text-sm") %>" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">star</span>
+  <% end %>
+</div>
