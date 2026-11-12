@@ -10,7 +10,7 @@
   <meta property="og:image" content="<%= image_url "nequis/taza.jpeg" %>">
 <% end %>
 
-<main id="servicios">
+<main id="servicios" data-controller="scroll-reveal">
   <div class="flex w-full flex-col">
     <!-- Breadcrumb / Brand Tag -->
     <section class="w-full border-b border-brand-border/60 bg-[#FAF5EB] px-6 py-3.5">
@@ -32,7 +32,7 @@
       <div class="pointer-events-none absolute -top-24 right-10 h-96 w-96 rounded-full bg-brand-soft-lilac/60 blur-3xl" aria-hidden="true"></div>
       <div class="pointer-events-none absolute -left-20 top-72 h-80 w-80 rounded-full bg-brand-yellow/15 blur-3xl" aria-hidden="true"></div>
 
-      <div class="relative mx-auto flex max-w-5xl flex-col items-center text-center">
+      <div class="reveal relative mx-auto flex max-w-5xl flex-col items-center text-center" data-scroll-reveal-target="item">
         <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-brand-border bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-brand-purple shadow-sm">
           <span class="material-symbols-outlined text-[16px] text-brand-purple" aria-hidden="true">verified</span>
           Técnicas de Estampado &amp; Personalización
@@ -59,7 +59,7 @@
         <div class="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-3">
 
           <!-- Sublimación Digital -->
-          <article class="group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-brand-border bg-white p-7 shadow-sm transition-all duration-300 hover:shadow-xl md:p-9">
+          <article class="reveal group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-brand-border bg-white p-7 shadow-sm transition-all duration-300 hover:shadow-xl md:p-9" data-scroll-reveal-target="item" data-reveal-delay="0">
             <div class="absolute inset-x-0 top-0 h-1.5 bg-linear-to-r from-brand-purple to-purple-400" aria-hidden="true"></div>
             <div>
               <div class="mb-6 mt-1 flex flex-wrap items-center gap-2">
@@ -68,6 +68,9 @@
               </div>
 
               <div class="mb-5 flex items-center gap-4">
+                <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-brand-soft-lilac text-brand-purple shadow-sm transition-all duration-300 group-hover:bg-brand-purple group-hover:text-white">
+                  <span class="material-symbols-outlined text-[30px]" aria-hidden="true">local_cafe</span>
+                </div>
                 <div>
                   <h2 class="font-editorial text-2xl font-bold leading-snug text-brand-dark md:text-3xl">Sublimación Digital</h2>
                   <span class="text-[10px] font-bold uppercase tracking-[0.18em] text-brand-purple">Acabado fotográfico integrado</span>
@@ -80,6 +83,7 @@
 
               <div class="mb-6 rounded-2xl border border-brand-border bg-[#FAF8F5] p-4">
                 <span class="mb-2 flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-brand-purple">
+                  <span class="material-symbols-outlined text-[16px]" aria-hidden="true">category</span>
                   Aplicaciones ideales
                 </span>
                 <p class="text-xs font-medium leading-relaxed text-brand-dark/80">
@@ -88,10 +92,16 @@
               </div>
             </div>
 
+            <a href="https://wa.me/50577040918?text=Hola%20NEQUIS%2C%20quiero%20cotizar%20Sublimaci%C3%B3n%20Digital."
+               class="flex w-full items-center justify-center gap-2 rounded-2xl bg-brand-purple px-6 py-3.5 text-sm font-semibold text-white shadow-md transition-all hover:bg-brand-indigo hover:shadow-lg"
+               target="_blank" rel="noopener noreferrer">
+              Cotizar Sublimación
+              <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+            </a>
           </article>
 
           <!-- DTF Textil -->
-          <article class="group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-brand-border bg-white p-7 shadow-sm transition-all duration-300 hover:shadow-xl md:p-9">
+          <article class="reveal group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-brand-border bg-white p-7 shadow-sm transition-all duration-300 hover:shadow-xl md:p-9" data-scroll-reveal-target="item" data-reveal-delay="120">
             <div class="absolute inset-x-0 top-0 h-1.5 bg-linear-to-r from-brand-yellow/60 to-brand-yellow" aria-hidden="true"></div>
             <div>
               <div class="mb-6 mt-1 flex flex-wrap items-center gap-2">
@@ -100,7 +110,9 @@
               </div>
 
               <div class="mb-5 flex items-center gap-4">
-
+                <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-brand-yellow/25 text-[#8a6a00] shadow-sm transition-all duration-300 group-hover:bg-brand-yellow group-hover:text-brand-dark">
+                  <span class="material-symbols-outlined text-[30px]" aria-hidden="true">checkroom</span>
+                </div>
                 <div>
                   <h2 class="font-editorial text-2xl font-bold leading-snug text-brand-dark md:text-3xl">DTF Textil</h2>
                   <span class="text-[10px] font-bold uppercase tracking-[0.18em] text-[#766300]">Direct to Film de última generación</span>
@@ -112,16 +124,26 @@
               </p>
 
               <div class="mb-6 rounded-2xl border border-brand-border bg-[#FAF8F5] p-4">
+                <span class="mb-2 flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-[#766300]">
+                  <span class="material-symbols-outlined text-[16px]" aria-hidden="true">dry_cleaning</span>
+                  Aplicaciones ideales
+                </span>
                 <p class="text-xs font-medium leading-relaxed text-brand-dark/80">
                   Poleras 100% algodón, polerones, tote bags canvas, mezclilla, gorras y prendas oscuras o claras.
                 </p>
               </div>
             </div>
 
+            <a href="https://wa.me/50577040918?text=Hola%20NEQUIS%2C%20quiero%20cotizar%20DTF%20Textil."
+               class="flex w-full items-center justify-center gap-2 rounded-2xl bg-brand-yellow px-6 py-3.5 text-sm font-semibold text-brand-dark shadow-md transition-all hover:bg-brand-yellow/90 hover:shadow-lg"
+               target="_blank" rel="noopener noreferrer">
+              Cotizar DTF Textil
+              <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+            </a>
           </article>
 
           <!-- Serigrafía Artesanal -->
-          <article class="group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-brand-border bg-white p-7 shadow-sm transition-all duration-300 hover:shadow-xl md:p-9">
+          <article class="reveal group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-brand-border bg-white p-7 shadow-sm transition-all duration-300 hover:shadow-xl md:p-9" data-scroll-reveal-target="item" data-reveal-delay="240">
             <div class="absolute inset-x-0 top-0 h-1.5 bg-linear-to-r from-brand-indigo to-brand-navy" aria-hidden="true"></div>
             <div>
               <div class="mb-6 mt-1 flex flex-wrap items-center gap-2">
@@ -130,8 +152,12 @@
               </div>
 
               <div class="mb-5 flex items-center gap-4">
+                <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-brand-indigo/10 text-brand-indigo shadow-sm transition-all duration-300 group-hover:bg-brand-indigo group-hover:text-white">
+                  <span class="material-symbols-outlined text-[30px]" aria-hidden="true">palette</span>
+                </div>
                 <div>
                   <h2 class="font-editorial text-2xl font-bold leading-snug text-brand-dark md:text-3xl">Serigrafía Artesanal</h2>
+                  <span class="text-[10px] font-bold uppercase tracking-[0.18em] text-brand-indigo">Estándar industrial de alto volumen</span>
                 </div>
               </div>
 
@@ -141,7 +167,7 @@
 
               <div class="mb-6 rounded-2xl border border-brand-border bg-[#FAF8F5] p-4">
                 <span class="mb-2 flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-brand-indigo">
-
+                  <span class="material-symbols-outlined text-[16px]" aria-hidden="true">precision_manufacturing</span>
                   Aplicaciones ideales
                 </span>
                 <p class="text-xs font-medium leading-relaxed text-brand-dark/80">
@@ -150,7 +176,12 @@
               </div>
             </div>
 
-
+            <a href="https://wa.me/50577040918?text=Hola%20NEQUIS%2C%20quiero%20cotizar%20Serigraf%C3%ADa%20Artesanal."
+               class="flex w-full items-center justify-center gap-2 rounded-2xl bg-brand-indigo px-6 py-3.5 text-sm font-semibold text-white shadow-md transition-all hover:bg-brand-navy hover:shadow-lg"
+               target="_blank" rel="noopener noreferrer">
+              Cotizar Serigrafía
+              <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+            </a>
           </article>
 
         </div>
@@ -160,7 +191,7 @@
     <!-- CTA Corporativo -->
     <section class="w-full bg-brand-cream px-6 py-12 lg:px-8 lg:py-16">
       <div class="mx-auto max-w-7xl">
-        <div class="relative flex flex-col items-start justify-between gap-8 overflow-hidden rounded-3xl bg-brand-navy p-8 text-white shadow-xl sm:p-12 lg:flex-row lg:items-center lg:p-16">
+        <div class="reveal relative flex flex-col items-start justify-between gap-8 overflow-hidden rounded-3xl bg-brand-navy p-8 text-white shadow-xl sm:p-12 lg:flex-row lg:items-center lg:p-16" data-scroll-reveal-target="item">
           <div class="pointer-events-none absolute -right-20 -top-24 h-72 w-72 rounded-full bg-brand-purple/40 blur-3xl" aria-hidden="true"></div>
           <div class="pointer-events-none absolute -bottom-24 left-1/3 h-64 w-64 rounded-full bg-brand-yellow/10 blur-3xl" aria-hidden="true"></div>
 

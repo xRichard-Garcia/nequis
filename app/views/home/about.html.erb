@@ -10,10 +10,10 @@
   <meta property="og:image" content="<%= image_url "nequis/creadora-joseling.jpg" %>">
 <% end %>
 
-<main class="w-full pt-8 pb-20">
+<main class="w-full pt-8 pb-20" data-controller="scroll-reveal">
   <!-- Hero / Intro -->
   <section class="max-w-7xl mx-auto px-6 lg:px-12 pt-12 pb-16">
-    <div class="max-w-3xl">
+    <div class="reveal max-w-3xl">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-border bg-white text-[11px] uppercase tracking-[0.25em] text-brand-indigo font-medium mb-6 shadow-sm">
         <span class="w-1.5 h-1.5 rounded-full bg-brand-accent" aria-hidden="true"></span>
         Historia &amp; Identidad • NEQUIS
@@ -30,7 +30,7 @@
 
   <!-- Las Creadoras -->
   <section id="creadoras" class="max-w-7xl mx-auto px-6 lg:px-12 pb-24 scroll-mt-24">
-    <div class="flex flex-col md:flex-row md:items-end justify-between border-b border-brand-border pb-6 mb-12">
+    <div class="reveal flex flex-col md:flex-row md:items-end justify-between border-b border-brand-border pb-6 mb-12">
       <div>
         <span class="text-[11px] tracking-[0.25em] uppercase font-semibold text-brand-indigo/80 block mb-2">Las Mentes y Corazones</span>
         <h2 class="font-editorial text-3xl sm:text-4xl text-brand-navy font-normal">Las Creadoras de NEQUIS</h2>
@@ -42,7 +42,7 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
       <!-- Joseling -->
-      <article class="bg-brand-card border border-brand-border/70 rounded-2xl p-6 lg:p-7 flex flex-col justify-between hover:shadow-lg transition-all duration-300 group">
+      <article class="reveal bg-brand-card border border-brand-border/70 rounded-2xl p-6 lg:p-7 flex flex-col justify-between hover:shadow-lg transition-all duration-300 group">
         <div>
           <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-brand-sand mb-6">
             <%= image_tag "nequis/creadora-joseling.jpg",
@@ -77,7 +77,7 @@
       </article>
 
       <!-- Greyschell -->
-      <article class="bg-brand-card border border-brand-border/70 rounded-2xl p-6 lg:p-7 flex flex-col justify-between hover:shadow-lg transition-all duration-300 group">
+      <article class="reveal bg-brand-card border border-brand-border/70 rounded-2xl p-6 lg:p-7 flex flex-col justify-between hover:shadow-lg transition-all duration-300 group">
         <div>
           <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-brand-sand mb-6">
             <%= image_tag "nequis/creadora-greyschell.jpg",
@@ -112,7 +112,7 @@
       </article>
 
       <!-- Cinthia -->
-      <article class="bg-brand-card border border-brand-border/70 rounded-2xl p-6 lg:p-7 flex flex-col justify-between hover:shadow-lg transition-all duration-300 group md:col-span-2 lg:col-span-1">
+      <article class="reveal bg-brand-card border border-brand-border/70 rounded-2xl p-6 lg:p-7 flex flex-col justify-between hover:shadow-lg transition-all duration-300 group md:col-span-2 lg:col-span-1">
         <div>
           <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-brand-sand mb-6">
             <%= image_tag "nequis/creadora-cinthia.jpg",
@@ -151,14 +151,14 @@
   <!-- Nuestra Historia -->
   <section id="historia" class="max-w-7xl mx-auto px-6 lg:px-12 py-16 border-t border-brand-border scroll-mt-24">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-      <div class="lg:col-span-5 space-y-4">
+      <div class="reveal lg:col-span-5 space-y-4">
         <span class="text-[11px] tracking-[0.25em] uppercase font-semibold text-brand-indigo block">Nuestra Historia</span>
         <h2 class="font-editorial text-3xl sm:text-4xl lg:text-5xl text-brand-navy font-normal leading-[1.2]">
           El origen de NEQUIS: <br>
           <span class="italic text-brand-muted font-light">de una pasión compartida a un sueño hecho realidad.</span>
         </h2>
       </div>
-      <div class="lg:col-span-7 space-y-6 pt-2 text-brand-muted text-base sm:text-lg font-light leading-relaxed">
+      <div class="reveal lg:col-span-7 space-y-6 pt-2 text-brand-muted text-base sm:text-lg font-light leading-relaxed">
         <p class="text-brand-navy font-normal text-lg sm:text-xl">
           NEQUIS surge como una iniciativa de tres jóvenes emprendedoras que comparten el interés por el diseño, la creatividad y el mundo de la personalización.
         </p>
@@ -176,7 +176,7 @@
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
-      <div class="bg-white border border-brand-border rounded-2xl p-8 lg:p-10 relative overflow-hidden flex flex-col justify-between shadow-sm">
+      <div class="reveal bg-white border border-brand-border rounded-2xl p-8 lg:p-10 relative overflow-hidden flex flex-col justify-between shadow-sm">
         <div class="mb-8">
           <div class="flex items-center gap-2 mb-4">
             <span class="w-8 h-8 rounded-full bg-brand-sand flex items-center justify-center text-brand-indigo">
@@ -195,7 +195,7 @@
         </div>
       </div>
 
-      <div class="bg-white border border-brand-border rounded-2xl p-8 lg:p-10 relative overflow-hidden flex flex-col justify-between shadow-sm">
+      <div class="reveal bg-white border border-brand-border rounded-2xl p-8 lg:p-10 relative overflow-hidden flex flex-col justify-between shadow-sm">
         <div class="mb-8">
           <div class="flex items-center gap-2 mb-4">
             <span class="w-8 h-8 rounded-full bg-brand-sand flex items-center justify-center text-brand-accent">
@@ -218,7 +218,7 @@
 
   <!-- Nuestros Valores -->
   <section id="valores" class="max-w-7xl mx-auto px-6 lg:px-12 py-20 border-t border-brand-border scroll-mt-24">
-    <div class="text-center max-w-xl mx-auto mb-16">
+    <div class="reveal text-center max-w-xl mx-auto mb-16">
       <span class="text-[11px] tracking-[0.25em] uppercase font-semibold text-brand-indigo block mb-2">El Manifiesto NEQUIS</span>
       <h2 class="font-editorial text-3xl sm:text-4xl text-brand-navy font-normal mb-3">Nuestros Valores</h2>
       <p class="text-sm text-brand-muted font-light leading-relaxed">
@@ -227,7 +227,7 @@
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-      <div class="bg-white border border-brand-border rounded-xl p-6 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+      <div class="reveal bg-white border border-brand-border rounded-xl p-6 flex flex-col justify-between hover:-translate-y-1 transition-transform">
         <div>
           <div class="w-10 h-10 rounded-full bg-[#F4F1F8] flex items-center justify-center text-brand-indigo mb-5">
             <span class="material-symbols-outlined text-[20px]" aria-hidden="true">palette</span>
@@ -241,7 +241,7 @@
         </div>
       </div>
 
-      <div class="bg-white border border-brand-border rounded-xl p-6 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+      <div class="reveal bg-white border border-brand-border rounded-xl p-6 flex flex-col justify-between hover:-translate-y-1 transition-transform">
         <div>
           <div class="w-10 h-10 rounded-full bg-[#FAF5EC] flex items-center justify-center text-brand-accent mb-5">
             <span class="material-symbols-outlined text-[20px]" aria-hidden="true">verified</span>
@@ -255,7 +255,7 @@
         </div>
       </div>
 
-      <div class="bg-white border border-brand-border rounded-xl p-6 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+      <div class="reveal bg-white border border-brand-border rounded-xl p-6 flex flex-col justify-between hover:-translate-y-1 transition-transform">
         <div>
           <div class="w-10 h-10 rounded-full bg-[#F4F1F8] flex items-center justify-center text-brand-indigo mb-5">
             <span class="material-symbols-outlined text-[20px]" aria-hidden="true">fingerprint</span>
@@ -269,7 +269,7 @@
         </div>
       </div>
 
-      <div class="bg-white border border-brand-border rounded-xl p-6 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+      <div class="reveal bg-white border border-brand-border rounded-xl p-6 flex flex-col justify-between hover:-translate-y-1 transition-transform">
         <div>
           <div class="w-10 h-10 rounded-full bg-[#FAF5EC] flex items-center justify-center text-brand-accent mb-5">
             <span class="material-symbols-outlined text-[20px]" aria-hidden="true">handshake</span>
@@ -283,7 +283,7 @@
         </div>
       </div>
 
-      <div class="bg-white border border-brand-border rounded-xl p-6 flex flex-col justify-between hover:-translate-y-1 transition-transform sm:col-span-2 lg:col-span-1">
+      <div class="reveal bg-white border border-brand-border rounded-xl p-6 flex flex-col justify-between hover:-translate-y-1 transition-transform sm:col-span-2 lg:col-span-1">
         <div>
           <div class="w-10 h-10 rounded-full bg-[#F4F1F8] flex items-center justify-center text-brand-indigo mb-5">
             <span class="material-symbols-outlined text-[20px]" aria-hidden="true">favorite</span>
@@ -301,7 +301,7 @@
 
   <!-- Tips de las Creadoras -->
   <section id="tips" class="max-w-7xl mx-auto px-6 lg:px-12 py-12 scroll-mt-24">
-    <div class="bg-brand-card border border-brand-border rounded-2xl p-8 lg:p-10" data-controller="creator-tabs">
+    <div class="reveal bg-brand-card border border-brand-border rounded-2xl p-8 lg:p-10" data-controller="creator-tabs">
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-8 border-b border-brand-border/70">
         <div>
           <span class="text-[11px] tracking-[0.25em] uppercase font-semibold text-brand-indigo block mb-1">Secretos de Taller</span>
@@ -371,7 +371,7 @@
 
   <!-- CTA Corporativo -->
   <section class="max-w-7xl mx-auto px-6 lg:px-12 py-12">
-    <div class="bg-brand-navy text-white rounded-3xl p-10 lg:p-16 relative overflow-hidden flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 shadow-xl">
+    <div class="reveal bg-brand-navy text-white rounded-3xl p-10 lg:p-16 relative overflow-hidden flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 shadow-xl">
       <div class="max-w-2xl space-y-4">
         <span class="text-[11px] tracking-[0.25em] uppercase font-semibold text-brand-accent block">Servicio Corporativo &amp; Eventos</span>
         <h2 class="font-editorial text-3xl sm:text-4xl lg:text-5xl font-normal leading-tight">
