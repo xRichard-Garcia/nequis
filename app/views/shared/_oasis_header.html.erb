@@ -1,0 +1,41 @@
+<header class="sticky top-0 z-40 bg-brand-cream/90 backdrop-blur-md border-b border-brand-border/80" data-purpose="main-navigation">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <nav aria-label="Navegación principal" class="hidden md:flex items-center space-x-9 text-xs font-medium tracking-wide uppercase text-brand-dark/80">
+      <%= link_to "Inicio", root_path, class: "text-brand-dark font-semibold border-b border-brand-dark pb-0.5", aria: { current: "page" } %>
+      <%= link_to "Colección", root_path(anchor: "coleccion"), class: "hover:text-brand-purple transition-colors" %>
+      <%= link_to "Personalizar", root_path(anchor: "personalizacion"), class: "hover:text-brand-purple transition-colors" %>
+      <%= link_to "Sobre nosotros", about_path(anchor: "nosotros"), class: "hover:text-brand-purple transition-colors" %>
+    </nav>
+
+    <%= link_to root_path, class: "flex flex-col items-center group py-2", data: { purpose: "brand-logo" }, aria: { label: "NEQUIS, ir al inicio" } do %>
+      <div class="flex items-center space-x-1.5">
+        <svg class="w-6 h-6 text-brand-purple fill-current transition-transform duration-300 group-hover:rotate-12" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M16 4c-1.3 0-2.3 1-2.3 2.3 0 .8.4 1.5 1.1 1.9-.9.4-1.7 1-2.4 1.7-.4-.7-1.1-1.1-1.9-1.1-1.3 0-2.3 1-2.3 2.3 0 .7.3 1.3.8 1.7-.8.7-1.5 1.5-1.9 2.5-.7-.4-1.5-.5-2.2-.2-1.2.5-1.8 1.8-1.3 3 .5 1.2 1.8 1.8 3 1.3.6-.3 1-.7 1.3-1.3.6 1 1.4 1.8 2.3 2.4-.2.8-.1 1.6.4 2.3.7 1.1 2.1 1.4 3.2.7 1.1-.7 1.4-2.1.7-3.2-.3-.5-.7-.9-1.3-1.1.8-.7 1.4-1.5 1.9-2.5.7.4 1.5.5 2.2.2 1.2-.5 1.8-1.8 1.3-3-.5-1.2-1.8-1.8-3-1.3-.6.3-1 .7-1.3 1.3-.6-1-1.4-1.8-2.3-2.4.2-.8.1-1.6-.4-2.3-.6-.8-1.6-1.3-2.6-1.3z" fill="#372A7A"></path>
+          <circle cx="16" cy="16" fill="#F5B726" r="3.2"></circle>
+        </svg>
+        <span class="text-2xl font-black tracking-tight text-brand-purple">NEQUIS</span>
+      </div>
+      <span class="text-[9px] font-bold tracking-[0.22em] text-brand-muted uppercase -mt-0.5">Sublimación &amp; DTF</span>
+    <% end %>
+
+    <div class="flex items-center space-x-6 text-xs font-medium tracking-wide" data-purpose="utility-actions">
+      <%= link_to "Catálogo DTF", root_path(anchor: "coleccion"), class: "hidden sm:inline-block text-brand-dark/80 hover:text-brand-purple transition-colors" %>
+      <button type="button" class="text-brand-dark/80 hover:text-brand-purple transition-colors flex items-center space-x-1">
+        <span>Mi Cuenta</span>
+      </button>
+
+      <button type="button" aria-label="Buscar" class="text-brand-dark/80 hover:text-brand-purple transition-colors p-1">
+        <svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </button>
+
+      <%= link_to root_path(anchor: "coleccion"), class: "relative text-brand-dark/80 hover:text-brand-purple transition-colors p-1", aria: { label: "Carrito de compras" } do %>
+        <svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25c-.669 0-1.189-.578-1.119-1.243l1.263-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        <span class="absolute -top-1 -right-1 w-3.5 h-3.5 bg-brand-yellow text-brand-purple text-[9px] font-bold rounded-full flex items-center justify-center" data-shop-target="cartCount" aria-live="polite">0</span>
+      <% end %>
+    </div>
+  </div>
+</header>

@@ -3,6 +3,11 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
   static targets = ["tab", "panel"]
 
+  connect() {
+    const selected = this.tabTargets.find((tab) => tab.getAttribute("aria-selected") === "true") || this.tabTargets[0]
+    if (selected) this.activate(selected)
+  }
+
   select(event) {
     this.activate(event.currentTarget)
   }
@@ -33,10 +38,10 @@ export default class extends Controller {
     this.tabTargets.forEach((item) => {
       const isActive = item === tab
 
-      item.classList.toggle("bg-primary", isActive)
-      item.classList.toggle("text-on-primary", isActive)
-      item.classList.toggle("text-on-surface-variant", !isActive)
-      item.classList.toggle("hover:text-on-surface", !isActive)
+      item.classList.toggle("bg-brand-navy", isActive)
+      item.classList.toggle("text-white", isActive)
+      item.classList.toggle("text-brand-muted", !isActive)
+      item.classList.toggle("hover:text-brand-navy", !isActive)
       item.setAttribute("aria-selected", String(isActive))
       item.tabIndex = isActive ? 0 : -1
     })

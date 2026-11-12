@@ -9,12 +9,19 @@ export default class extends Controller {
     const button = event.currentTarget
     if (button.dataset.added === "true") return
 
+    const isCompact = button.dataset.compact === "true"
     const productName = button.closest(".group")?.querySelector("h3")?.textContent.trim()
     const originalContent = button.innerHTML
 
     button.dataset.added = "true"
-    button.innerHTML = '<span class="material-symbols-outlined text-[18px]" aria-hidden="true">check</span><span>¡Añadido!</span>'
-    button.classList.add("bg-secondary", "text-on-secondary")
+
+    if (isCompact) {
+      button.innerHTML = '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>'
+      button.classList.replace("bg-brand-dark", "bg-brand-purple")
+    } else {
+      button.innerHTML = '<span class="material-symbols-outlined text-[18px]" aria-hidden="true">check</span><span>¡Añadido!</span>'
+      button.classList.add("bg-secondary", "text-on-secondary")
+    }
 
     this.incrementCart()
     if (this.hasStatusTarget) {
@@ -23,7 +30,13 @@ export default class extends Controller {
 
     setTimeout(() => {
       button.innerHTML = originalContent
-      button.classList.remove("bg-secondary", "text-on-secondary")
+
+      if (isCompact) {
+        button.classList.replace("bg-brand-purple", "bg-brand-dark")
+      } else {
+        button.classList.remove("bg-secondary", "text-on-secondary")
+      }
+
       delete button.dataset.added
     }, 1500)
   }
