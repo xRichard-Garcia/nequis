@@ -1,0 +1,24 @@
+<% content_for :title, "Servicios — BULLA" %>
+
+<%= render "bulla/page_hero",
+      kicker: "Servicios / Our services",
+      title: "Creatividad que conecta. <span class=\"accent\">Estrategia que impulsa.</span>",
+      description: "Seis áreas de trabajo para construir marcas, comunicar ideas y apoyar objetivos comerciales." %>
+
+<section class="section">
+  <div class="container">
+    <div class="grid-3">
+      <%= render partial: "bulla/service_card", collection: BullaContent::SERVICES, as: :service %>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container cta-inner">
+    <div>
+      <div class="eyebrow">¿No sabes por dónde empezar?</div>
+      <h2>Cuéntanos qué necesita <span class="script">tu marca.</span></h2>
+    </div>
+    <%= link_to "Solicitar información ↗", bulla_contact_path, class: "btn btn-dark" %>
+  </div>
+</section>

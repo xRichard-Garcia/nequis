@@ -1,0 +1,16 @@
+<article class="work-card" data-category="<%= project[:category] %>">
+  <%= link_to bulla_project_path(id: project[:id]), aria: { label: "Ver proyecto #{project[:name]}" } do %>
+    <div class="work-thumb">
+      <%= image_tag "bulla/#{project[:id]}.svg", alt: "Gráfica conceptual: #{project[:name]}" %>
+    </div>
+    <div class="work-meta">
+      <div class="tag-row">
+        <span class="tag"><%= project[:category] %></span>
+        <span class="demo-label">Concepto editable</span>
+      </div>
+      <h3><%= project[:name] %></h3>
+      <p class="small"><%= project[:summary] %></p>
+      <span class="text-link">Ver caso conceptual</span>
+    </div>
+  <% end %>
+</article>

@@ -1,0 +1,17 @@
+<% content_for :title, "#{@legal_page[:title]} — BULLA" %>
+
+<%= render "bulla/page_hero",
+      kicker: "Información legal",
+      title: @legal_page[:title],
+      description: "Información editable que requiere revisión y aprobación antes de publicar." %>
+
+<section class="section">
+  <div class="container legal-wrap">
+    <div class="legal-alert"><strong><%= @legal_page[:subtitle] %>.</strong> Este texto es una estructura de trabajo, no asesoría legal ni una política final. Completar los campos entre corchetes y validar con asesoría competente antes de publicar.</div>
+    <% @legal_page[:sections].each do |heading, text| %>
+      <h2><%= heading %></h2>
+      <p><%= text %></p>
+    <% end %>
+    <p class="small" style="margin-top:45px">Última revisión: pendiente · Fecha de entrada en vigor: pendiente.</p>
+  </div>
+</section>

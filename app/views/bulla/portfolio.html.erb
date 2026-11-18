@@ -1,0 +1,21 @@
+<% content_for :title, "Portafolio — BULLA" %>
+
+<%= render "bulla/page_hero",
+      kicker: "Portafolio / Our work",
+      title: "Ideas visuales que hacen <span class=\"accent\">ruido.</span>",
+      description: "Galería de demostración con proyectos conceptuales y editables. No se presentan como trabajos realizados para clientes reales." %>
+
+<section class="section">
+  <div class="container">
+    <div class="eyebrow">Explora por categoría</div>
+    <div class="filters" role="group" aria-label="Filtrar proyectos">
+      <% ["Todos", "Branding", "Diseño gráfico", "Redes sociales", "Publicidad", "Audiovisual"].each do |category| %>
+        <button class="filter-btn <%= "active" if category == "Todos" %>" type="button" data-filter="<%= category %>" aria-pressed="<%= category == "Todos" %>"><%= category %></button>
+      <% end %>
+    </div>
+    <div class="portfolio-grid" id="portfolioGrid">
+      <%= render partial: "bulla/work_card", collection: BullaContent::PROJECTS, as: :project %>
+    </div>
+    <p class="small" style="margin-top:25px">Todos los materiales de esta galería están identificados como ejemplos conceptuales. Reemplazar por proyectos autorizados antes de publicar.</p>
+  </div>
+</section>

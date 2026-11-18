@@ -1,0 +1,18 @@
+<header class="site-header">
+  <div class="nav-wrap">
+    <%= link_to bulla_path, class: "brand" do %>
+      <%= image_tag "bulla/logo.jpg", alt: "Logotipo oficial BULLA" %>
+    <% end %>
+
+    <nav class="nav-links" id="mainNav" aria-label="Navegación principal">
+      <% bulla_nav_items.each do |label, path, active| %>
+        <%= link_to label, path, class: ("active" if active) %>
+      <% end %>
+    </nav>
+
+    <div class="nav-actions">
+      <%= link_to "HABLEMOS ↗", bulla_contact_path, class: "btn btn-primary btn-small" %>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>

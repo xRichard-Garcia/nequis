@@ -1,0 +1,107 @@
+<% content_for :title, "BULLA — Hacemos ruido" %>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">Agencia creativa · Nicaragua</div>
+      <h1>
+        <span class="line">No vinimos a</span>
+        <span class="line">pasar desapercibidos.</span>
+        <span class="line">Vinimos a hacer ruido.</span>
+      </h1>
+      <p class="lead">Transformamos ideas en marcas que conectan, destacan y dejan huella.</p>
+      <div class="hero-actions">
+        <%= link_to "Conoce nuestros servicios ↗", bulla_services_path, class: "btn btn-primary" %>
+        <%= link_to "Hablemos de tu proyecto", bulla_contact_path, class: "btn btn-outline" %>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <div class="sound-orbit"></div>
+      <%= image_tag "bulla/logo.jpg", class: "hero-logo", alt: "Logotipo oficial BULLA" %>
+      <div class="burst">IDEAS<br>QUE<br>SUENAN</div>
+      <div class="hero-tag">CREATIVIDAD SIN SILENCIO</div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee">
+  <div class="marquee-track">
+    <% 4.times do %>
+      <span>BULLA <b>✳</b> HACEMOS RUIDO <b>✳</b> IDEAS QUE DEJAN HUELLA <b>✳</b></span>
+    <% end %>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container intro-grid">
+    <div>
+      <div class="eyebrow">Quiénes somos</div>
+      <div class="intro-stamp">BULLA<small>CREATIVIDAD CON VOZ</small></div>
+    </div>
+    <div>
+      <h2>Las ideas no nacieron para quedarse <span class="script">en silencio.</span></h2>
+      <p class="lead">BULLA es una agencia creativa y publicitaria que transforma ideas en propuestas innovadoras mediante el diseño, la publicidad y la comunicación.</p>
+      <p class="muted">Buscamos conectar, destacar y generar impacto en cada marca. Creemos en las ideas con personalidad, en la comunicación auténtica y en atrevernos a hacer las cosas de manera diferente.</p>
+      <%= link_to "Conoce la esencia de BULLA", bulla_about_path, class: "text-link" %>
+    </div>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Lo que hacemos</div>
+        <h2>Seis formas de <span class="script">hacer ruido.</span></h2>
+      </div>
+      <p>Soluciones creativas y publicitarias pensadas para dar forma a ideas y fortalecer marcas.</p>
+    </div>
+    <div class="grid-3">
+      <%= render partial: "bulla/service_card", collection: BullaContent::SERVICES, as: :service %>
+    </div>
+    <div style="margin-top:28px"><%= link_to "Ver los seis servicios completos", bulla_services_path, class: "text-link" %></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Selección de trabajo</div>
+        <h2>Ideas que toman <span class="accent">forma.</span></h2>
+      </div>
+      <p>Una muestra de recursos gráficos conceptuales para visualizar el lenguaje creativo de BULLA.</p>
+    </div>
+    <div class="grid-2">
+      <%= render partial: "bulla/work_card", collection: BullaContent::PROJECTS.first(2), as: :project %>
+    </div>
+    <div style="margin-top:28px"><%= link_to "Explorar portafolio", bulla_portfolio_path, class: "text-link" %></div>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">El equipo</div>
+        <h2>Personas detrás <span class="script">de las ideas.</span></h2>
+      </div>
+      <p>Los espacios de fotografía, cargos y perfiles se completarán con información real y autorizada.</p>
+    </div>
+    <div class="grid-3">
+      <%= render partial: "bulla/team_card", collection: BullaContent::TEAM.first(3), as: :person %>
+    </div>
+    <div style="margin-top:28px"><%= link_to "Conoce al equipo", bulla_team_path, class: "text-link" %></div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container cta-inner">
+    <div>
+      <div class="eyebrow">Tu idea puede empezar aquí</div>
+      <h2>¿Listo para que tu marca <span class="script">se haga escuchar?</span></h2>
+    </div>
+    <%= link_to "Hablemos ↗", bulla_contact_path, class: "btn btn-dark" %>
+  </div>
+</section>

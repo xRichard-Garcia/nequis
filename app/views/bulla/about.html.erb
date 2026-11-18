@@ -1,0 +1,78 @@
+<% content_for :title, "Nosotros — BULLA" %>
+
+<%= render "bulla/page_hero",
+      kicker: "Nosotros / About us",
+      title: "No hacemos lo de siempre. <span class=\"accent\">Hacemos BULLA.</span>",
+      description: "Somos una agencia creativa y publicitaria que convierte ideas en propuestas innovadoras a través del diseño, la publicidad y la comunicación." %>
+
+<section class="section">
+  <div class="container story-block">
+    <div>
+      <div class="eyebrow">¿Quién es BULLA?</div>
+      <h2>Una idea que se niega a <span class="script">pasar en silencio.</span></h2>
+      <p class="lead">BULLA es una agencia creativa y publicitaria que transforma ideas en propuestas innovadoras mediante el diseño, la publicidad y la comunicación, buscando conectar, destacar y generar impacto en cada marca.</p>
+      <p class="muted">Nuestro nombre representa la fuerza de las ideas que buscan hacerse escuchar. Transmite energía, creatividad y atrevimiento: el propósito de destacar, romper lo convencional y hacer que cada marca deje huella.</p>
+    </div>
+    <div class="story-art">
+      <div class="eyebrow" style="color:var(--ink)">Nuestro arquetipo</div>
+      <h3>EL REBELDE<br>QUE SE ATREVE<br>A DECIRLO.</h3>
+      <div class="big-letter">B</div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Dirección de marca</div>
+        <h2>Lo que nos <span class="script">mueve.</span></h2>
+      </div>
+      <p>La misión y visión del manual guían la manera en que pensamos, diseñamos y comunicamos.</p>
+    </div>
+    <div class="mission-grid">
+      <article class="mission-card">
+        <h3>Misión</h3>
+        <p>Brindar soluciones creativas y publicitarias que transformen ideas en marcas auténticas, conectando con las personas a través del diseño, la innovación y la comunicación.</p>
+      </article>
+      <article class="mission-card">
+        <h3>Visión</h3>
+        <p>Ser una agencia creativa y reconocida por su originalidad, innovación y capacidad de impulsar marcas que destaquen y dejen huella.</p>
+      </article>
+      <article class="mission-card">
+        <h3>¿Por qué BULLA?</h3>
+        <p>Porque las ideas con fuerza merecen ser escuchadas. Nuestro nombre expresa energía, creatividad y atrevimiento.</p>
+      </article>
+      <article class="mission-card">
+        <h3>Arquetipo rebelde</h3>
+        <p>Buscamos romper con lo tradicional, expresar ideas sin miedo y crear propuestas que destaquen.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Nuestros valores</div>
+        <h2>Principios con <span class="accent">personalidad.</span></h2>
+      </div>
+    </div>
+    <div class="value-list">
+      <% ["Creatividad", "Innovación", "Autenticidad", "Compromiso", "Colaboración", "Atrevimiento"].each do |value| %>
+        <div class="value-pill"><%= value %></div>
+      <% end %>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container cta-inner">
+    <div>
+      <div class="eyebrow">Hagamos algo diferente</div>
+      <h2>Las buenas ideas merecen <span class="script">hacerse escuchar.</span></h2>
+    </div>
+    <%= link_to "Conversemos ↗", bulla_contact_path, class: "btn btn-dark" %>
+  </div>
+</section>

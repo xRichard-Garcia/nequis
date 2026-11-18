@@ -14,6 +14,26 @@ Rails.application.routes.draw do
   get "servicios", to: "home#services", as: :services
   get "opiniones", to: "home#opinions", as: :opinions
 
+  # Sitio BULLA: layout y estilos propios. Es la página principal del sitio.
+  get "bulla", to: "bulla#index", as: :bulla
+
+  scope "bulla", as: :bulla do
+    get "/", to: "bulla#index", as: :root
+    get "nosotros", to: "bulla#about", as: :about
+    get "equipo", to: "bulla#team", as: :team
+    get "servicios", to: "bulla#services", as: :services
+    get "servicio/:id", to: "bulla#service", as: :service
+    get "portafolio", to: "bulla#portfolio", as: :portfolio
+    get "proyecto/:id", to: "bulla#project", as: :project
+    get "blog", to: "bulla#blog", as: :blog
+    get "articulo/:id", to: "bulla#article", as: :article
+    get "contacto", to: "bulla#contact", as: :contact
+    get "gracias", to: "bulla#thanks", as: :thanks
+    get "faq", to: "bulla#faq", as: :faq
+    get "legal/:key", to: "bulla#legal", as: :legal
+  end
+  get "bulla/*path", to: "bulla#not_found"
+
   # Defines the root path route ("/")
-  root "home#index"
+  root "bulla#index"
 end

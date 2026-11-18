@@ -1,0 +1,63 @@
+<% content_for :title, "Contacto — BULLA" %>
+
+<%= render "bulla/page_hero",
+      kicker: "Contacto / Let’s talk",
+      title: "Hablemos de lo que <span class=\"accent\">quieres crear.</span>",
+      description: "Cuéntanos sobre tu marca, tu idea o el reto que quieres resolver. El equipo podrá revisar tu solicitud y definir los siguientes pasos." %>
+
+<section class="section">
+  <div class="container contact-grid">
+    <aside class="contact-card">
+      <div class="eyebrow">Conectemos</div>
+      <h2 style="font-size:34px;margin:18px 0">Hagamos que <span class="script">pase algo.</span></h2>
+      <p class="muted">Estamos en Nicaragua. Los datos de contacto oficiales se incorporarán cuando sean confirmados.</p>
+      <div class="contact-item"><b>Ubicación</b><span>Nicaragua</span></div>
+      <div class="contact-item"><b>Correo</b><span>Correo electrónico por configurar</span></div>
+      <div class="contact-item"><b>WhatsApp</b><span>Enlace oficial pendiente de configurar ↗</span></div>
+      <div class="contact-item"><b>Redes sociales</b><span>Instagram · Facebook · TikTok</span><span class="small">Enlaces oficiales pendientes de configurar.</span></div>
+    </aside>
+
+    <form class="form-card" id="contactForm" method="get" action="<%= bulla_thanks_path %>" data-thanks-url="<%= bulla_thanks_path %>">
+      <h2>Cuéntanos tu idea.</h2>
+      <p>Los campos con * son obligatorios. Esta versión es un prototipo: el formulario muestra una confirmación local y no envía datos a un servidor.</p>
+      <div class="form-grid">
+        <div class="field"><label for="fullname">Nombre completo *</label><input id="fullname" name="fullname" autocomplete="name" required placeholder="Tu nombre"></div>
+        <div class="field"><label for="email">Correo electrónico *</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="nombre@correo.com"></div>
+        <div class="field"><label for="phone">Número de teléfono *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="Tu número"></div>
+        <div class="field"><label for="business">Negocio o marca *</label><input id="business" name="business" required placeholder="Nombre de tu marca"></div>
+        <div class="field">
+          <label for="service">Servicio de interés *</label>
+          <select id="service" name="service" required>
+            <option value="">Selecciona un servicio</option>
+            <% BullaContent::SERVICES.each do |service| %>
+              <option value="<%= service[:name] %>" <%= "selected" if @requested_service && @requested_service[:id] == service[:id] %>><%= service[:name] %></option>
+            <% end %>
+            <option value="No estoy seguro/a">No estoy seguro/a</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="budget">Presupuesto aproximado (opcional)</label>
+          <select id="budget" name="budget">
+            <option value="">Prefiero conversarlo</option>
+            <option>Menos de US$250</option>
+            <option>US$250–500</option>
+            <option>US$500–1,000</option>
+            <option>Más de US$1,000</option>
+            <option>Por definir</option>
+          </select>
+        </div>
+        <div class="field full"><label for="message">Descripción del proyecto *</label><textarea id="message" name="message" required placeholder="Cuéntanos qué necesitas, qué quieres lograr y cualquier detalle importante."></textarea></div>
+        <div class="field full">
+          <label class="check-field">
+            <input type="checkbox" name="privacy" required>
+            <span>He leído y acepto la <%= link_to "política de privacidad", bulla_legal_path(key: "privacidad"), style: "color:#087b8d;text-decoration:underline" %>. *</span>
+          </label>
+        </div>
+        <div class="field full">
+          <button class="btn btn-red" type="submit">Enviar solicitud ↗</button>
+          <p class="form-note">Prototipo sin backend: los datos no se transmiten ni se almacenan en un servidor.</p>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

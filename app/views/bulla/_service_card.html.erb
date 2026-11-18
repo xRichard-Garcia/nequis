@@ -1,0 +1,7 @@
+<article class="service-card">
+  <span class="service-no"><%= service[:no] %> / 06</span>
+  <span class="service-symbol" aria-hidden="true"><%= service[:symbol] %></span>
+  <h3><%= service[:name] %></h3>
+  <p><%= service[:short] %></p>
+  <%= link_to "Explorar servicio", bulla_service_path(id: service[:id]), class: "text-link" %>
+</article>

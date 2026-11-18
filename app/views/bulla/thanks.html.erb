@@ -1,0 +1,15 @@
+<% content_for :title, "Gracias — BULLA" %>
+
+<section class="section">
+  <div class="container" style="max-width:760px;text-align:center">
+    <div class="success-mark" style="margin:0 auto 25px">✓</div>
+    <div class="eyebrow" style="justify-content:center">Solicitud preparada</div>
+    <h1 style="font-size:clamp(44px,8vw,78px);margin:20px 0">¡Gracias<%= params[:name].present? ? ", #{params[:name]}" : "" %>!</h1>
+    <p class="lead" style="margin:0 auto 25px">Tu formulario se completó correctamente en este prototipo. En una versión publicada, esta pantalla deberá conectarse al sistema de recepción de solicitudes de BULLA.</p>
+    <p class="muted">No se ha enviado ningún dato a un servidor.</p>
+    <div class="hero-actions" style="justify-content:center">
+      <%= link_to "Volver al inicio", bulla_path, class: "btn btn-primary" %>
+      <%= link_to "Explorar servicios", bulla_services_path, class: "btn btn-outline" %>
+    </div>
+  </div>
+</section>

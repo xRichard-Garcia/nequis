@@ -1,0 +1,23 @@
+<% content_for :title, "Preguntas frecuentes — BULLA" %>
+
+<%= render "bulla/page_hero",
+      kicker: "Preguntas frecuentes / FAQ",
+      title: "Respuestas claras. <span class=\"accent\">Ideas sin ruido.</span>",
+      description: "Información inicial sobre los servicios y el proceso de trabajo de BULLA. Las respuestas pueden editarse cuando se definan las políticas comerciales oficiales." %>
+
+<section class="section">
+  <div class="container">
+    <div class="faq-list">
+      <% BullaContent::FAQ.each do |question, answer| %>
+        <details>
+          <summary><%= question %></summary>
+          <p><%= answer %></p>
+        </details>
+      <% end %>
+    </div>
+    <div style="text-align:center;margin-top:45px">
+      <p class="lead" style="margin:0 auto 20px">¿No encuentras lo que buscas?</p>
+      <%= link_to "Escríbenos ↗", bulla_contact_path, class: "btn btn-primary" %>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,31 @@
+<% content_for :title, "Equipo — BULLA" %>
+
+<%= render "bulla/page_hero",
+      kicker: "Nuestro equipo / Team",
+      title: "Personas que convierten ideas <span class=\"accent\">en movimiento.</span>",
+      description: "Cuatro espacios preparados para presentar al equipo BULLA. Las fotografías, cargos, biografías y enlaces se completarán cuando se disponga de información real y aprobada." %>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Conoce al equipo</div>
+        <h2>La creatividad es <span class="script">un trabajo en equipo.</span></h2>
+      </div>
+      <p>Los perfiles que aparecen como pendientes son marcadores provisionales, no datos biográficos.</p>
+    </div>
+    <div class="grid-2">
+      <%= render partial: "bulla/team_card", collection: BullaContent::TEAM, as: :person %>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container cta-inner">
+    <div>
+      <div class="eyebrow">¿Quieres trabajar con BULLA?</div>
+      <h2>Tu próximo proyecto puede empezar <span class="script">con una conversación.</span></h2>
+    </div>
+    <%= link_to "Escríbenos ↗", bulla_contact_path, class: "btn btn-dark" %>
+  </div>
+</section>

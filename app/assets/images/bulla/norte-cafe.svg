@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#FAE13F"/><stop offset="1" stop-color="#FF6D08"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="18" stdDeviation="16" flood-opacity=".2"/></filter></defs>
+<rect width="900" height="650" fill="url(#bg)"/><circle cx="735" cy="120" r="170" fill="#DF2C32"/><circle cx="735" cy="120" r="118" fill="#05131C"/><path d="M0 470 Q240 330 460 510T900 450V650H0Z" fill="#05131C"/>
+<g filter="url(#s)"><rect x="145" y="125" width="250" height="350" rx="16" fill="#05131C" transform="rotate(-8 145 125)"/><rect x="420" y="185" width="250" height="300" rx="16" fill="#64DCEC" transform="rotate(8 420 185)"/><rect x="230" y="260" width="210" height="210" rx="105" fill="#DF2C32" stroke="#fff" stroke-width="10"/><path d="M285 352q55-85 110 0q-55 70-110 0Z" fill="#fff"/><text x="270" y="215" fill="#64DCEC" font-size="42" font-family="Georgia" font-weight="bold">NORTE</text><text x="475" y="300" fill="#05131C" font-size="28" font-family="Arial" font-weight="bold">IDENTIDAD</text><text x="475" y="340" fill="#05131C" font-size="20" font-family="Arial">CONCEPTO DE MARCA</text></g>
+<text x="54" y="590" fill="#fff" font-size="24" font-family="Arial" letter-spacing="6">CASO CONCEPTUAL · NO ES CLIENTE REAL</text>
+</svg>

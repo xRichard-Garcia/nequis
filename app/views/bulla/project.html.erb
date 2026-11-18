@@ -1,0 +1,55 @@
+<% content_for :title, "#{@project[:name]} — BULLA" %>
+
+<%= render "bulla/page_hero",
+      kicker: "Portafolio / #{@project[:category]}",
+      title: "#{@project[:name]}. <span class=\"accent\">Caso conceptual.</span>",
+      description: @project[:summary] %>
+
+<section class="section">
+  <div class="container">
+    <span class="demo-label">Proyecto de demostración · no es cliente real</span>
+    <div class="project-cover">
+      <%= image_tag "bulla/#{@project[:id]}.svg", alt: "Imagen conceptual de #{@project[:name]}" %>
+    </div>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container project-info-grid">
+    <div>
+      <div class="eyebrow">Ficha del proyecto</div>
+      <h2>De la idea a la <span class="script">propuesta.</span></h2>
+      <div class="project-facts">
+        <div><b>Categoría</b><span><%= @project[:category] %></span></div>
+        <div><b>Estado</b><span>Concepto editable</span></div>
+        <div><b>Cliente</b><span>No aplica · marca ficticia</span></div>
+      </div>
+    </div>
+    <div>
+      <h3>Objetivo del proyecto</h3>
+      <p><%= @project[:objective] %></p>
+      <h3>Solución creativa</h3>
+      <p><%= @project[:solution] %></p>
+      <h3>Proceso de trabajo</h3>
+      <p><%= @project[:process] %></p>
+      <h3>Resultados</h3>
+      <p><%= @project[:results] %></p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Más ideas</div>
+        <h2>Otros proyectos <span class="accent">conceptuales.</span></h2>
+      </div>
+    </div>
+    <div class="grid-2">
+      <%= render partial: "bulla/work_card",
+            collection: BullaContent::PROJECTS.reject { |project| project[:id] == @project[:id] }.first(2),
+            as: :project %>
+    </div>
+  </div>
+</section>

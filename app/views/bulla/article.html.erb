@@ -1,0 +1,24 @@
+<% content_for :title, "#{@article[:title]} — BULLA" %>
+
+<%= render "bulla/page_hero",
+      kicker: "Bulla Ideas / #{@article[:category]}",
+      title: @article[:title],
+      description: "Contenido editorial de demostración. Revisar y adaptar antes de publicar." %>
+
+<section class="section">
+  <div class="container article-content">
+    <div class="tag-row">
+      <span class="tag"><%= @article[:category] %></span>
+      <span class="small"><%= @article[:date] %></span>
+      <span class="demo-label">Artículo de muestra</span>
+    </div>
+    <p class="lead" style="margin-top:25px"><%= @article[:intro] %></p>
+    <% @article[:sections].each do |heading, text| %>
+      <h2><%= heading %></h2>
+      <p><%= text %></p>
+    <% end %>
+    <div style="margin-top:50px;padding-top:25px;border-top:1px solid rgba(255,255,255,.15)">
+      <%= link_to "← Volver al blog", bulla_blog_path, class: "text-link" %>
+    </div>
+  </div>
+</section>

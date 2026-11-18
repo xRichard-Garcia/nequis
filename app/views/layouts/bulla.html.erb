@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#05131C">
+    <meta name="description" content="BULLA es una agencia creativa y publicitaria de Nicaragua. Transformamos ideas en marcas que conectan, destacan y dejan huella. Hacemos ruido.">
+    <title><%= content_for?(:title) ? content_for(:title) : "BULLA — Hacemos ruido" %></title>
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "bulla", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "bulla", "data-turbo-track": "reload", defer: true %>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <%= render "bulla/header" %>
+    <main id="main" class="page-enter"><%= yield %></main>
+    <%= render "bulla/footer" %>
+    <%= render "bulla/whatsapp_button" %>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<% content_for :title, "#{@service[:name]} — BULLA" %>
+
+<%= render "bulla/page_hero",
+      kicker: "Servicio #{@service[:no]} / 06",
+      title: "#{@service[:name]}. <span class=\"accent\">A tu manera.</span>",
+      description: @service[:detail] %>
+
+<section class="section">
+  <div class="container service-detail-hero">
+    <div>
+      <div class="eyebrow">Qué hacemos</div>
+      <h2>Una solución pensada para <span class="script">tu objetivo.</span></h2>
+      <p class="lead"><%= @service[:short] %></p>
+      <p class="muted">El alcance, tiempos, formatos y entregables se definen en una propuesta personalizada antes de iniciar.</p>
+      <%= link_to "Solicitar información ↗", bulla_contact_path(servicio: @service[:id]), class: "btn btn-primary" %>
+    </div>
+    <div class="service-visual"><div class="symbol"><%= @service[:symbol] %></div></div>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Alcance posible</div>
+        <h2>¿Qué puede <span class="script">incluir?</span></h2>
+      </div>
+      <p>Los siguientes componentes son una guía inicial; cada proyecto se ajusta a sus necesidades.</p>
+    </div>
+    <div class="service-detail-list">
+      <% @service[:includes].each_with_index do |item, index| %>
+        <article>
+          <div class="service-no"><%= format("%02d", index + 1) %></div>
+          <h3><%= item %></h3>
+          <p>Se define en conjunto según los objetivos y el alcance acordado.</p>
+        </article>
+      <% end %>
+    </div>
+    <div style="margin-top:35px">
+      <h3>Lo que buscamos</h3>
+      <p class="lead"><%= @service[:result] %></p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">También te puede interesar</div>
+        <h2>Otros servicios <span class="accent">BULLA.</span></h2>
+      </div>
+    </div>
+    <div class="grid-3">
+      <%= render partial: "bulla/service_card",
+            collection: BullaContent::SERVICES.reject { |service| service[:id] == @service[:id] }.first(3),
+            as: :service %>
+    </div>
+  </div>
+</section>

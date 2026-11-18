@@ -1,0 +1,46 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <%= image_tag "bulla/logo.jpg", alt: "Logotipo oficial BULLA" %>
+        <p>Agencia creativa y publicitaria. Ideas que conectan, destacan y dejan huella.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explora</h4>
+        <% bulla_nav_items.each do |label, path, _active| %>
+          <%= link_to label, path %>
+        <% end %>
+        <%= link_to "Preguntas frecuentes", bulla_faq_path %>
+      </div>
+
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <% BullaContent::SERVICES.each do |service| %>
+          <%= link_to service[:name], bulla_service_path(id: service[:id]) %>
+        <% end %>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <span>Nicaragua</span>
+        <span>Correo por definir</span>
+        <span>Instagram · enlace pendiente</span>
+        <span>Facebook · enlace pendiente</span>
+        <span>TikTok · enlace pendiente</span>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 BULLA. Todos los derechos reservados.</span>
+      <div class="legal-links">
+        <%= link_to "Privacidad", bulla_legal_path(key: "privacidad") %>
+        <%= link_to "Cookies", bulla_legal_path(key: "cookies") %>
+        <%= link_to "Términos", bulla_legal_path(key: "terminos") %>
+        <%= link_to "Aviso legal", bulla_legal_path(key: "aviso") %>
+        <%= link_to "Copyright", bulla_legal_path(key: "copyright") %>
+      </div>
+      <span>Los contenidos y elementos visuales están protegidos por los derechos que correspondan.</span>
+    </div>
+  </div>
+</footer>
