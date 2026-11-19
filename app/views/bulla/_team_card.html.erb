@@ -1,6 +1,10 @@
 <article class="team-card">
-  <div class="team-photo">
-    <div class="avatar-mark"><%= person[:initial] %></div>
+  <div class="team-photo<%= " has-photo" if person[:photo] %>">
+    <% if person[:photo] %>
+      <%= image_tag person[:photo], alt: "Fotografía de #{person[:name]}" %>
+    <% else %>
+      <div class="avatar-mark"><%= person[:initial] %></div>
+    <% end %>
   </div>
   <div class="team-info">
     <h3><%= person[:name] %></h3>

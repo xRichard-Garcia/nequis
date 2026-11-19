@@ -30,10 +30,12 @@ module BullaContent
   copyright: { title: "Derechos de autor y propiedad intelectual", subtitle: "Declaración editable para revisión", sections: [ [ "Propiedad intelectual", "Los contenidos, diseños, textos, fotografías, ilustraciones, recursos gráficos y demás elementos originales del sitio están protegidos por los derechos de propiedad intelectual que correspondan." ], [ "Uso autorizado", "No se autoriza la reproducción, distribución o modificación de los elementos protegidos sin el permiso correspondiente, salvo los usos permitidos por la legislación aplicable." ], [ "Marcas de terceros", "Los nombres y signos de terceros que pudieran aparecer en materiales de referencia pertenecen a sus respectivos titulares." ], [ "Revisión", "[Verificar titularidad de cada recurso, licencias de tipografías, fotografías, iconos y demás materiales antes de publicar.]" ] ] }
 }.freeze
   TEAM = [
-  { name: "Jocelyn Grace Amin Randall", initial: "JG" },
-  { name: "Cynthia", initial: "C" },
-  { name: "Alexander", initial: "A" },
-  { name: "Integrante por confirmar", initial: "+" }
+  { name: "Joseling", initial: "J", photo: "nequis/creadora-joseling.jpg" },
+  { name: "Cinthia", initial: "C", photo: "nequis/creadora-cinthia.jpg" },
+  { name: "Greyschell", initial: "G", photo: "nequis/creadora-greyschell.jpg" },
+  { name: "Amynn", initial: "A", photo: "bulla/amynn.jpeg" },
+  { name: "Randall", initial: "R", photo: "bulla/randall.jpeg" },
+  { name: "Alexander", initial: "A", photo: "bulla/alexander.jpeg" }
 ].freeze
   FAQ = [ [ "¿Qué servicios ofrece BULLA?", "BULLA presenta seis áreas de servicio: branding e identidad de marca, gestión de redes sociales, diseño gráfico y publicitario, marketing digital y campañas, creación de contenido audiovisual y estrategias comerciales." ], [ "¿Cómo puedo contratar sus servicios?", "Puedes completar el formulario de contacto y describir tu proyecto. El alcance, los tiempos y las condiciones se revisan y acuerdan antes de iniciar." ], [ "¿Cómo es el proceso de trabajo?", "Como flujo de referencia: conversación inicial, comprensión de necesidades, propuesta de alcance, aprobación y desarrollo del proyecto. El proceso específico dependerá del servicio contratado." ], [ "¿Puedo solicitar un servicio personalizado?", "Sí. Puedes explicar tus necesidades en el formulario para que se evalúe una propuesta acorde con el proyecto." ], [ "¿Cómo puedo solicitar una cotización?", "Completa el formulario de contacto con los datos básicos, el servicio de interés y una descripción del proyecto. El presupuesto es opcional." ] ].freeze
 end
