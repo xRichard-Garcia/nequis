@@ -18,9 +18,9 @@ module BullaContent
   { id: "storyboard-bulla", name: "En movimiento · Audiovisual", category: "Audiovisual", slug: "audiovisual", image: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjUwIj4KPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI2NTAiIGZpbGw9IiNGRjZEMDgiLz48cmVjdCB4PSI3MCIgeT0iNTUiIHdpZHRoPSI3NjAiIGhlaWdodD0iNDcwIiByeD0iMzAiIGZpbGw9IiMwNTEzMUMiLz48Y2lyY2xlIGN4PSI0NTAiIGN5PSIyOTAiIHI9IjE0NSIgZmlsbD0iI0RGMkMzMiIvPjxwYXRoIGQ9Ik00MjAgMjA1TDU1NSAyOTAgNDIwIDM3NVoiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJNMTA1IDQ4MFEyODAgMzgwIDQ1MCA0ODVUNzk1IDQ3NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjREQ0VDIiBzdHJva2Utd2lkdGg9IjE2Ii8+PHRleHQgeD0iODAiIHk9IjYwMCIgZmlsbD0iIzA1MTMxQyIgZm9udC1zaXplPSIyNiIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXdlaWdodD0iYm9sZCIgbGV0dGVyLXNwYWNpbmc9IjQiPlNUT1JZQk9BUkQgwrcgQ09OVEVOSURPIEFVRElPVklTVUFMPC90ZXh0Pgo8L3N2Zz4K", summary: "Storyboard gráfico para una pieza audiovisual ficticia.", objective: "Representar visualmente una idea de contenido en formato de video corto.", solution: "Se plantea una escena principal con un foco de atención y una composición preparada para adaptarse a distintos formatos.", process: "Idea, estructura visual, storyboard y propuesta de edición.", results: "Ejemplo de portafolio editable. No es una producción publicada." }
 ].freeze
   ARTICLES = [
-  { id: "marca-con-voz", category: "Branding", date: "Lectura de 4 min", title: "Una marca necesita una voz, no solo un logotipo", excerpt: "La identidad también se escucha: tono, mensajes y consistencia construyen reconocimiento.", intro: "Una marca no se define únicamente por su símbolo o sus colores. También se construye con la manera en que habla, responde y se relaciona con las personas.", sections: [ [ "La voz también es identidad", "El tono de comunicación debe reflejar la personalidad de la marca y mantenerse reconocible en sus diferentes canales. No se trata de repetir frases, sino de sostener una forma propia de expresarse." ], [ "Definir antes de publicar", "Antes de crear contenido conviene establecer a quién se dirige la marca, qué quiere comunicar y qué lenguaje resulta natural para su audiencia." ], [ "La consistencia crea reconocimiento", "Cuando las palabras, las imágenes y la experiencia apuntan en la misma dirección, la marca transmite una idea más clara." ] ] },
-  { id: "contenido-con-intencion", category: "Redes sociales", date: "Lectura de 3 min", title: "Publicar más no siempre significa comunicar mejor", excerpt: "Una planificación útil parte de objetivos y de las necesidades de la audiencia.", intro: "La frecuencia por sí sola no garantiza una comunicación efectiva. Cada publicación necesita una razón para existir y un mensaje que aporte valor.", sections: [ [ "Empezar por el objetivo", "Antes de diseñar una pieza, define si buscas informar, explicar, generar conversación o presentar una oferta." ], [ "Pensar en la audiencia", "El contenido debe responder a preguntas, intereses y situaciones reales de las personas a quienes se dirige." ], [ "Medir para aprender", "Revisa los indicadores que tengan relación con el objetivo. Las métricas deben ayudar a tomar decisiones, no convertirse en un fin por sí mismas." ] ] },
-  { id: "brief-creativo", category: "Estrategia", date: "Lectura de 5 min", title: "El brief creativo: una buena idea empieza con buenas preguntas", excerpt: "Un brief claro reduce suposiciones y ayuda a convertir necesidades en decisiones creativas.", intro: "El brief es una herramienta para alinear expectativas. Permite comprender el contexto antes de proponer soluciones visuales o de comunicación.", sections: [ [ "Comprender el problema", "Describe qué necesita resolver el proyecto y por qué es importante hacerlo ahora." ], [ "Acordar el alcance", "Define entregables, tiempos, responsables y recursos disponibles para evitar expectativas distintas." ], [ "Dejar espacio a la creatividad", "Un brief claro establece límites útiles sin cerrar la puerta a ideas inesperadas." ] ] }
+  { id: "marca-con-voz", category: "Branding", date: "", title: "Una marca necesita una voz, no solo un logotipo", excerpt: "La identidad también se escucha: tono, mensajes y consistencia construyen reconocimiento.", intro: "Una marca no se define únicamente por su símbolo o sus colores. También se construye con la manera en que habla, responde y se relaciona con las personas.", sections: [ [ "La voz también es identidad", "El tono de comunicación debe reflejar la personalidad de la marca y mantenerse reconocible en sus diferentes canales. No se trata de repetir frases, sino de sostener una forma propia de expresarse." ], [ "Definir antes de publicar", "Antes de crear contenido conviene establecer a quién se dirige la marca, qué quiere comunicar y qué lenguaje resulta natural para su audiencia." ], [ "La consistencia crea reconocimiento", "Cuando las palabras, las imágenes y la experiencia apuntan en la misma dirección, la marca transmite una idea más clara." ] ] },
+  { id: "contenido-con-intencion", category: "Redes sociales", date: "", title: "Publicar más no siempre significa comunicar mejor", excerpt: "Una planificación útil parte de objetivos y de las necesidades de la audiencia.", intro: "La frecuencia por sí sola no garantiza una comunicación efectiva. Cada publicación necesita una razón para existir y un mensaje que aporte valor.", sections: [ [ "Empezar por el objetivo", "Antes de diseñar una pieza, define si buscas informar, explicar, generar conversación o presentar una oferta." ], [ "Pensar en la audiencia", "El contenido debe responder a preguntas, intereses y situaciones reales de las personas a quienes se dirige." ], [ "Medir para aprender", "Revisa los indicadores que tengan relación con el objetivo. Las métricas deben ayudar a tomar decisiones, no convertirse en un fin por sí mismas." ] ] },
+  { id: "brief-creativo", category: "Estrategia", date: "", title: "El brief creativo: una buena idea empieza con buenas preguntas", excerpt: "Un brief claro reduce suposiciones y ayuda a convertir necesidades en decisiones creativas.", intro: "El brief es una herramienta para alinear expectativas. Permite comprender el contexto antes de proponer soluciones visuales o de comunicación.", sections: [ [ "Comprender el problema", "Describe qué necesita resolver el proyecto y por qué es importante hacerlo ahora." ], [ "Acordar el alcance", "Define entregables, tiempos, responsables y recursos disponibles para evitar expectativas distintas." ], [ "Dejar espacio a la creatividad", "Un brief claro establece límites útiles sin cerrar la puerta a ideas inesperadas." ] ] }
 ].freeze
   LEGAL_PAGES = {
   privacidad: { title: "Política de privacidad", subtitle: "Borrador para revisión y aprobación", sections: [ [ "1. Responsable del tratamiento", "[Completar con la razón social o persona responsable, dirección y correo de contacto oficial de BULLA.]" ], [ "2. Información que se puede recopilar", "Este sitio puede solicitar nombre, correo electrónico, teléfono, nombre del negocio y detalles del proyecto mediante el formulario de contacto. No enviar información sensible que no sea necesaria para una cotización." ], [ "3. Finalidad", "La información se utilizará para responder consultas, preparar propuestas y dar seguimiento a solicitudes relacionadas con los servicios de BULLA. Las finalidades definitivas deben revisarse y aprobarse antes de publicar." ], [ "4. Conservación y seguridad", "[Definir plazos de conservación, medidas de seguridad, proveedores y procedimientos aplicables.]" ], [ "5. Derechos y consultas", "[Incorporar el procedimiento para solicitar acceso, rectificación, actualización o eliminación de datos, según corresponda a la normativa aplicable.]" ], [ "6. Contacto", "[Agregar correo oficial y datos del responsable.]" ] ] },
@@ -30,12 +30,48 @@ module BullaContent
   copyright: { title: "Derechos de autor y propiedad intelectual", subtitle: "Declaración editable para revisión", sections: [ [ "Propiedad intelectual", "Los contenidos, diseños, textos, fotografías, ilustraciones, recursos gráficos y demás elementos originales del sitio están protegidos por los derechos de propiedad intelectual que correspondan." ], [ "Uso autorizado", "No se autoriza la reproducción, distribución o modificación de los elementos protegidos sin el permiso correspondiente, salvo los usos permitidos por la legislación aplicable." ], [ "Marcas de terceros", "Los nombres y signos de terceros que pudieran aparecer en materiales de referencia pertenecen a sus respectivos titulares." ], [ "Revisión", "[Verificar titularidad de cada recurso, licencias de tipografías, fotografías, iconos y demás materiales antes de publicar.]" ] ] }
 }.freeze
   TEAM = [
-  { name: "Joseling", initial: "J", photo: "nequis/creadora-joseling.jpg" },
-  { name: "Cinthia", initial: "C", photo: "nequis/creadora-cinthia.jpg" },
-  { name: "Greyschell", initial: "G", photo: "nequis/creadora-greyschell.jpg" },
-  { name: "Amynn", initial: "A", photo: "bulla/amynn.jpeg" },
-  { name: "Randall", initial: "R", photo: "bulla/randall.jpeg" },
-  { name: "Alexander", initial: "A", photo: "bulla/alexander.jpeg" }
+  {
+    name: "Joseling", initial: "J", photo: "nequis/creadora-joseling.jpg",
+    role: "Dirección de marca e identidad visual",
+    description: "Convierte ideas en sistemas visuales con identidad propia, cuidando cada detalle para que la marca se reconozca y se recuerde.",
+    socials: [ "Instagram", "Behance" ],
+    tip: { topic: "Identidad de marca", title: "El consejo de marca de Joseling", text: "Antes de elegir colores o tipografías, define en una frase qué hace única a tu marca. Si esa idea no se entiende, ningún logo la va a salvar." }
+  },
+  {
+    name: "Cinthia", initial: "C", photo: "nequis/creadora-cinthia.jpg",
+    role: "Gestión de redes y contenidos",
+    description: "Ordena la presencia digital de cada marca y traduce su voz en contenidos que conectan con la comunidad.",
+    socials: [ "Instagram", "LinkedIn" ],
+    tip: { topic: "Redes sociales", title: "El tip de contenido de Cinthia", text: "No publiques por publicar. Es mejor una pieza bien pensada a la semana que siete improvisadas: la constancia con intención construye más que el volumen." }
+  },
+  {
+    name: "Greyschell", initial: "G", photo: "nequis/creadora-greyschell.jpg",
+    role: "Diseño gráfico y dirección de arte",
+    description: "Diseña piezas que respiran: equilibrio, jerarquía y criterio para que cada mensaje se lea con claridad.",
+    socials: [ "Instagram", "Behance" ],
+    tip: { topic: "Diseño gráfico", title: "El secreto visual de Greyschell", text: "Deja respirar el diseño. Los márgenes y el espacio en blanco no son desperdicio: son los que hacen que el mensaje se lea y se recuerde." }
+  },
+  {
+    name: "Amynn", initial: "A", photo: "bulla/amynn.jpeg",
+    role: "Marketing digital y campañas",
+    description: "Prueba, mide y mejora. Encuentra el mensaje que funciona antes de invertir en hacerlo crecer.",
+    socials: [ "LinkedIn", "Instagram" ],
+    tip: { topic: "Marketing digital", title: "El consejo digital de Amynn", text: "Mide antes de escalar. Prueba un mensaje con poco presupuesto, revisa qué funciona y luego invierte en lo que ya demostró resultados." }
+  },
+  {
+    name: "Randall", initial: "R", photo: "bulla/randall.jpeg",
+    role: "Producción audiovisual",
+    description: "Cuenta historias en movimiento, desde la primera idea hasta el último corte, pensando siempre en quien las mira.",
+    socials: [ "Instagram", "Vimeo" ],
+    tip: { topic: "Audiovisual", title: "El tip audiovisual de Randall", text: "Los primeros tres segundos deciden si te ven o te saltan. Empieza con la idea más fuerte, no con la presentación de la marca." }
+  },
+  {
+    name: "Alexander", initial: "A", photo: "bulla/alexander.jpeg",
+    role: "Estrategia comercial",
+    description: "Conecta la creatividad con objetivos concretos y convierte cada pieza en una decisión que apoya el negocio.",
+    socials: [ "LinkedIn", "Instagram" ],
+    tip: { topic: "Estrategia comercial", title: "La recomendación de Alexander", text: "Una marca bonita no vende sola. Conecta cada pieza creativa con un objetivo claro: reconocimiento, confianza o venta. Si todo hace lo mismo, nada destaca." }
+  }
 ].freeze
   FAQ = [ [ "¿Qué servicios ofrece BULLA?", "BULLA presenta seis áreas de servicio: branding e identidad de marca, gestión de redes sociales, diseño gráfico y publicitario, marketing digital y campañas, creación de contenido audiovisual y estrategias comerciales." ], [ "¿Cómo puedo contratar sus servicios?", "Puedes completar el formulario de contacto y describir tu proyecto. El alcance, los tiempos y las condiciones se revisan y acuerdan antes de iniciar." ], [ "¿Cómo es el proceso de trabajo?", "Como flujo de referencia: conversación inicial, comprensión de necesidades, propuesta de alcance, aprobación y desarrollo del proyecto. El proceso específico dependerá del servicio contratado." ], [ "¿Puedo solicitar un servicio personalizado?", "Sí. Puedes explicar tus necesidades en el formulario para que se evalúe una propuesta acorde con el proyecto." ], [ "¿Cómo puedo solicitar una cotización?", "Completa el formulario de contacto con los datos básicos, el servicio de interés y una descripción del proyecto. El presupuesto es opcional." ] ].freeze
 end

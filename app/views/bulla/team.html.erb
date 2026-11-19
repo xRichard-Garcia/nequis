@@ -20,6 +20,42 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Tips del equipo</div>
+        <h2>Un consejo de cada persona <span class="script">para tu marca.</span></h2>
+      </div>
+      <p>Toca un nombre para descubrir su recomendación creativa.</p>
+    </div>
+
+    <div class="tips-box">
+      <div class="tips-tabs" role="tablist" aria-label="Tips del equipo BULLA">
+        <% BullaContent::TEAM.each_with_index do |person, index| %>
+          <% key = person[:name].parameterize %>
+          <button class="tip-tab <%= "active" if index.zero? %>" type="button" role="tab"
+                  id="tip-tab-<%= key %>" aria-selected="<%= index.zero? %>" aria-controls="tip-<%= key %>"
+                  data-tip-tab data-key="<%= key %>"><%= person[:name] %></button>
+        <% end %>
+      </div>
+
+      <% BullaContent::TEAM.each_with_index do |person, index| %>
+        <% key = person[:name].parameterize %>
+        <div class="tip-panel<%= " hidden" unless index.zero? %>" id="tip-<%= key %>"
+             role="tabpanel" aria-labelledby="tip-tab-<%= key %>" data-tip-panel data-key="<%= key %>">
+          <div class="tip-icon" aria-hidden="true">✳</div>
+          <div>
+            <div class="tag-row"><span class="tag"><%= person[:tip][:topic] %></span></div>
+            <h3><%= person[:tip][:title] %></h3>
+            <p><%= person[:tip][:text] %></p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
+
 <section class="cta-band">
   <div class="container cta-inner">
     <div>

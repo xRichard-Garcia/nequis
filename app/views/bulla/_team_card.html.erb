@@ -7,9 +7,16 @@
     <% end %>
   </div>
   <div class="team-info">
+    <span class="team-role"><%= person[:role] %></span>
     <h3><%= person[:name] %></h3>
-    <p class="role-placeholder">Cargo por definir</p>
-    <p>Descripción profesional pendiente de incorporar con información aprobada por la persona integrante.</p>
-    <p class="small" style="margin-top:12px">Redes profesionales: enlace pendiente</p>
+    <p class="team-bio"><%= person[:description] %></p>
+    <div class="team-socials">
+      <span class="social-label">Redes profesionales</span>
+      <div class="social-chips">
+        <% Array(person[:socials]).each do |network| %>
+          <span class="social-chip" title="Enlace pendiente de configurar"><%= network %></span>
+        <% end %>
+      </div>
+    </div>
   </div>
 </article>

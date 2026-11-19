@@ -32,6 +32,27 @@
     });
   }
 
+  function initTips() {
+    var tabs = document.querySelectorAll("[data-tip-tab]");
+    if (!tabs.length) return;
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        var key = tab.dataset.key;
+
+        tabs.forEach(function (other) {
+          var active = other === tab;
+          other.classList.toggle("active", active);
+          other.setAttribute("aria-selected", String(active));
+        });
+
+        document.querySelectorAll("[data-tip-panel]").forEach(function (panel) {
+          panel.classList.toggle("hidden", panel.dataset.key !== key);
+        });
+      });
+    });
+  }
+
   function initContactForm() {
     var form = document.getElementById("contactForm");
     if (!form) return;
@@ -47,6 +68,7 @@
   function init() {
     initMenu();
     initFilters();
+    initTips();
     initContactForm();
   }
 
