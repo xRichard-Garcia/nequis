@@ -1,0 +1,104 @@
+<% content_for :title, "Oportunidad de inversión — BULLA" %>
+
+<section class="invest-page">
+  <div class="container invest-wrap">
+    <div class="invest-top">
+      <div>
+        <div class="eyebrow">Oportunidad de inversión</div>
+        <div class="invest-tag"><%= BullaContent::INVESTMENT[:tag] %></div>
+      </div>
+      <div class="invest-stamp" aria-hidden="true">IDEAS<br>EN MOVIMIENTO<span>↗</span></div>
+    </div>
+
+    <div class="invest-hero">
+      <div>
+        <h1>El ruido que hacemos hoy.<br><span>El crecimiento de mañana.</span></h1>
+        <p class="invest-lead">BULLA está construyendo una agencia creativa con visión de crecimiento. Buscamos aliados e inversionistas que quieran explorar lo que podemos desarrollar juntos.</p>
+        <%= link_to "#invest-explore", class: "invest-btn" do %>
+          EXPLORAR LA OPORTUNIDAD <b>↓</b>
+        <% end %>
+      </div>
+      <div class="invest-visual" aria-hidden="true">
+        <div class="invest-circle">B<span>!</span></div>
+        <div class="invest-note">CREATIVIDAD<br>+ ESTRATEGIA<br>+ CRECIMIENTO</div>
+        <div class="invest-star">✳</div>
+      </div>
+    </div>
+
+    <div id="invest-explore" class="invest-explore">
+      <div class="invest-heading">
+        <div class="eyebrow">La oportunidad</div>
+        <h2>¿Qué queremos<br>construir?</h2>
+        <p>Explorá las áreas en las que buscamos fortalecer y desarrollar el potencial de BULLA.</p>
+      </div>
+
+      <div class="invest-interactive">
+        <div class="invest-tabs" role="tablist" aria-label="Áreas de la oportunidad">
+          <% BullaContent::INVESTMENT[:tabs].each_with_index do |tab, index| %>
+            <button type="button"
+                    class="invest-tab<%= " active" if index.zero? %>"
+                    id="invest-tab-<%= tab[:id] %>"
+                    role="tab"
+                    aria-selected="<%= index.zero? %>"
+                    aria-controls="invest-panel-<%= tab[:id] %>"
+                    data-invest-tab
+                    data-target="invest-panel-<%= tab[:id] %>">
+              <%= tab[:number] %> <span><%= tab[:label] %></span>
+            </button>
+          <% end %>
+        </div>
+
+        <% BullaContent::INVESTMENT[:tabs].each_with_index do |tab, index| %>
+          <div class="invest-panel<%= " hidden" unless index.zero? %>"
+               id="invest-panel-<%= tab[:id] %>"
+               role="tabpanel"
+               aria-labelledby="invest-tab-<%= tab[:id] %>"
+               data-invest-panel>
+            <div class="panel-number"><%= tab[:heading] %></div>
+            <h3><%= tab[:title] %></h3>
+            <p><%= tab[:text] %></p>
+            <div class="panel-chips">
+              <% tab[:chips].each do |chip| %>
+                <span><%= chip %></span>
+              <% end %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="invest-road">
+      <div class="eyebrow">Nuestra visión de desarrollo</div>
+      <h2>El crecimiento se construye por etapas.</h2>
+      <div class="road-items">
+        <% BullaContent::INVESTMENT[:roadmap].each do |stage| %>
+          <button type="button" class="road-item" data-road-item aria-expanded="false">
+            <span class="road-num"><%= stage[:number] %></span>
+            <span class="road-title"><%= stage[:title] %> <small><%= stage[:subtitle] %></small></span>
+            <span class="road-plus" aria-hidden="true">+</span>
+            <span class="road-more"><%= stage[:text] %></span>
+          </button>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="invest-bottom">
+      <div>
+        <div class="eyebrow">Conversemos</div>
+        <h2>¿Querés conocer<br>la propuesta a fondo?</h2>
+        <p>La información sobre modelo de negocio, proyecciones, presupuesto y posibles modalidades de participación se comparte en una conversación con interesados.</p>
+      </div>
+      <div class="invest-call">
+        <div class="invest-call-mark">B.</div>
+        <p>Las ideas no crecen solas.<br><strong>Crecer también es hacer equipo.</strong></p>
+        <%= link_to bulla_contact_path(motivo: "inversion"), class: "invest-btn invest-btn-light" do %>
+          SOLICITAR INFORMACIÓN <b>↗</b>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="invest-disclaimer">
+      Esta sección presenta una oportunidad en exploración. Las condiciones, cifras, riesgos, términos y modalidades de inversión deberán establecerse mediante documentación formal.
+    </div>
+  </div>
+</section>

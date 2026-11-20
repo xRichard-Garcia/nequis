@@ -32,6 +32,7 @@
             <% BullaContent::SERVICES.each do |service| %>
               <option value="<%= service[:name] %>" <%= "selected" if @requested_service && @requested_service[:id] == service[:id] %>><%= service[:name] %></option>
             <% end %>
+            <option value="Oportunidad de inversión" <%= "selected" if params[:motivo] == "inversion" %>>Oportunidad de inversión</option>
             <option value="No estoy seguro/a">No estoy seguro/a</option>
           </select>
         </div>

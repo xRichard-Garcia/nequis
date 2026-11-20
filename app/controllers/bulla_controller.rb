@@ -28,6 +28,8 @@ class BullaController < ApplicationController
     render_not_found unless @article
   end
 
+  def investment; end
+
   def contact
     @requested_service = BullaContent::SERVICES.find { |service| service[:id] == params[:servicio] }
   end

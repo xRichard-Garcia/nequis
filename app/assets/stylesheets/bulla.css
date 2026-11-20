@@ -59,3 +59,90 @@ h1,h2,h3,h4,p{margin-top:0}h1,h2,h3,.display{font-family:var(--display);font-wei
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 
   
+/* Oportunidad de inversión */
+.invest-page{position:relative;overflow:hidden;background:var(--ink);color:var(--white);border-top:1px solid rgba(100,220,236,.2);padding:36px 0 0}
+.invest-wrap{position:relative}
+.invest-top{display:flex;justify-content:space-between;align-items:center;gap:24px;border-bottom:1px solid rgba(100,220,236,.2);padding-bottom:20px}
+.invest-tag{font-size:11px;color:var(--muted);letter-spacing:.18em;margin-top:12px}
+.invest-stamp{font-family:var(--display);font-size:12px;font-weight:900;letter-spacing:.14em;color:var(--red);border:2px solid var(--red);padding:12px;transform:rotate(7deg);line-height:1.35;flex:0 0 auto}
+.invest-stamp span{font-size:24px;display:block}
+.invest-hero{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:75px 0 100px}
+.invest-hero h1{font-size:clamp(44px,6.3vw,82px);line-height:.98;letter-spacing:-.045em;margin:20px 0}
+.invest-hero h1 span{color:var(--cyan)}
+.invest-lead{max-width:590px;font-size:18px;line-height:1.7;color:#c6d2d6;margin-bottom:0}
+.invest-btn{display:inline-flex;align-items:center;justify-content:space-between;gap:28px;padding:17px 20px;background:var(--cyan);color:var(--ink);font-size:13px;font-weight:900;letter-spacing:.03em;margin-top:22px;border:0;border-radius:4px;cursor:pointer;transition:transform .25s,background .25s}
+.invest-btn:hover{transform:translateY(-3px);background:var(--white)}
+.invest-btn b{font-size:17px;line-height:1}
+.invest-visual{min-height:390px;position:relative;background:var(--red);border-radius:10px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.invest-circle{width:280px;height:280px;border-radius:50%;background:var(--cyan);color:var(--ink);font-family:var(--display);font-size:190px;line-height:1;display:flex;align-items:center;justify-content:center;letter-spacing:-15px;transform:rotate(-12deg);position:relative}
+.invest-circle span{font-family:var(--body);font-size:46px;color:var(--red);position:absolute;right:24px;bottom:30px}
+.invest-note{position:absolute;left:18px;bottom:20px;background:var(--ink);color:var(--white);padding:15px;font-size:12px;font-weight:800;line-height:1.5;letter-spacing:.08em;transform:rotate(-4deg)}
+.invest-star{position:absolute;right:22px;top:20px;color:var(--yellow);font-size:80px;animation:investPulse 8s ease-in-out infinite}
+@keyframes investPulse{50%{transform:rotate(18deg) scale(1.08)}}
+.invest-explore{display:grid;grid-template-columns:.7fr 1.3fr;gap:45px;padding:60px 0;border-top:1px solid rgba(100,220,236,.2)}
+.invest-heading h2,.invest-road h2,.invest-bottom h2{font-size:clamp(35px,4vw,56px);line-height:1;letter-spacing:-.035em;margin:15px 0}
+.invest-heading p,.invest-bottom p{color:#b9cbd1;line-height:1.7}
+.invest-interactive{border:1px solid rgba(100,220,236,.25);border-radius:8px;overflow:hidden;background:#0a202b}
+.invest-tabs{display:grid;grid-template-columns:repeat(4,1fr)}
+.invest-tab{border:0;border-right:1px solid rgba(100,220,236,.18);background:transparent;color:var(--muted);padding:15px 8px;text-align:left;font-weight:800;cursor:pointer;font-size:12px}
+.invest-tab:last-child{border-right:0}
+.invest-tab span{display:block;margin-top:6px;font-size:11px;font-weight:500}
+.invest-tab.active{background:var(--cyan);color:var(--ink)}
+.invest-panel{padding:32px;min-height:240px;animation:fadeInvest .25s ease}
+.panel-number{color:var(--cyan);font-size:11px;font-weight:800;letter-spacing:.14em}
+.invest-panel h3{font-size:28px;line-height:1.1;margin:15px 0}
+.invest-panel p{color:#bdcdd2;line-height:1.7;max-width:620px}
+.panel-chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.panel-chips span{border:1px solid rgba(100,220,236,.4);border-radius:30px;padding:7px 11px;font-size:12px;color:var(--cyan)}
+@keyframes fadeInvest{from{opacity:.3;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+.invest-road{padding:65px 0;border-top:1px solid rgba(100,220,236,.2)}
+.invest-road h2{margin-bottom:30px}
+.road-items{border-top:1px solid rgba(100,220,236,.2)}
+.road-item{width:100%;display:grid;grid-template-columns:70px 1fr 35px;gap:15px;align-items:center;text-align:left;background:transparent;color:var(--white);border:0;border-bottom:1px solid rgba(100,220,236,.2);padding:22px 8px;cursor:pointer}
+.road-num{font-family:var(--display);font-size:22px;color:var(--cyan)}
+.road-title{font-weight:800;font-size:18px}
+.road-title small{display:block;font-size:12px;color:var(--muted);font-weight:500;margin-top:5px}
+.road-plus{font-size:27px;color:var(--cyan);transition:transform .2s,color .2s}
+.road-item.open .road-plus{transform:rotate(45deg);color:var(--red)}
+.road-more{display:none;grid-column:2/4;color:#bdcdd2;line-height:1.7;max-width:720px;padding:10px 0 5px}
+.road-item.open .road-more{display:block}
+.invest-bottom{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:stretch;padding:55px 0}
+.invest-call{background:var(--cyan);color:var(--ink);padding:32px;border-radius:8px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.invest-call-mark{font-family:var(--display);font-size:90px;font-weight:900;letter-spacing:-8px;line-height:1}
+.invest-call p{color:var(--ink);font-size:20px;line-height:1.5}
+.invest-btn-light{background:var(--ink);color:var(--white)}
+.invest-btn-light:hover{background:var(--red);color:var(--white)}
+.invest-disclaimer{border-top:1px solid rgba(100,220,236,.2);padding:20px 0;color:#839da7;font-size:11px;line-height:1.6}
+
+@media(max-width:980px){
+  .invest-hero{grid-template-columns:1fr;padding:55px 0 70px}
+  .invest-visual{min-height:340px}
+  .invest-explore{grid-template-columns:1fr;gap:30px;padding:50px 0}
+  .invest-bottom{grid-template-columns:1fr;padding:45px 0}
+}
+
+@media(max-width:640px){
+  .invest-page{padding-top:24px}
+  .invest-top{align-items:flex-start}
+  .invest-stamp{font-size:10px;padding:9px}
+  .invest-stamp span{font-size:18px}
+  .invest-hero{padding:45px 0 55px}
+  .invest-hero h1{font-size:clamp(38px,11vw,56px);letter-spacing:-.03em}
+  .invest-visual{min-height:280px}
+  .invest-circle{width:205px;height:205px;font-size:135px;letter-spacing:-10px}
+  .invest-circle span{font-size:34px;right:16px;bottom:22px}
+  .invest-note{font-size:10px;padding:11px}
+  .invest-star{font-size:55px}
+  .invest-tabs{grid-template-columns:1fr 1fr}
+  .invest-tab{border-bottom:1px solid rgba(100,220,236,.18)}
+  .invest-tab:nth-child(2){border-right:0}
+  .invest-tab:nth-child(3),.invest-tab:nth-child(4){border-bottom:0}
+  .invest-panel{padding:24px}
+  .road-item{grid-template-columns:45px 1fr 25px;gap:10px;padding:18px 4px}
+  .road-title{font-size:16px}
+  .road-more{grid-column:1/4;padding-left:0}
+  .invest-call{padding:24px}
+  .invest-call-mark{font-size:72px}
+  .invest-call p{font-size:18px}
+  .invest-btn{width:100%;gap:16px;font-size:12px;text-align:left}
+}

@@ -6,7 +6,8 @@ module BullaHelper
     when "team" then "/equipo"
     when "services", "service" then "/servicios"
     when "portfolio", "project" then "/portafolio"
-    when "blog", "article" then "/oportunidad"
+    when "blog", "article" then "/blog"
+    when "investment" then "/inversion"
     when "contact", "thanks" then "/contacto"
     else ""
     end
@@ -19,7 +20,8 @@ module BullaHelper
       "/equipo" => bulla_team_path,
       "/servicios" => bulla_services_path,
       "/portafolio" => bulla_portfolio_path,
-      "/oportunidad" => bulla_blog_path,
+      "/blog" => bulla_blog_path,
+      "/inversion" => bulla_investment_path,
       "/contacto" => bulla_contact_path
     }
 

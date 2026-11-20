@@ -27,6 +27,7 @@ Rails.application.routes.draw do
     get "proyecto/:id", to: "bulla#project", as: :project
     get "blog", to: "bulla#blog", as: :blog
     get "articulo/:id", to: "bulla#article", as: :article
+    get "inversion", to: "bulla#investment", as: :investment
     get "contacto", to: "bulla#contact", as: :contact
     get "gracias", to: "bulla#thanks", as: :thanks
     get "faq", to: "bulla#faq", as: :faq
